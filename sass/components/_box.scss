@@ -1,0 +1,35 @@
+.square--box{
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: #ff4500;
+        display: inline-block;
+        margin: 1.5rem auto;
+}
+
+.line{
+    margin-top: -1rem;
+    
+    &--1{
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: #ff4500;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+    &--2,
+    &--3{
+        height: .1rem;
+        border-radius: 3px;
+        display: inline-block;
+    }
+    
+    &--2{
+        background-color: #228b22;
+        width: 8rem;
+    }
+    
+    &--3{
+        background-color: #4169e1;
+        width: 6rem;
+    }
+}
