@@ -1,7 +1,7 @@
 .footer-hero{
     width: 100%;
     height: 30vh;
-    background-color: orangered;
+    background-color: $color-box-bg;
     
     &--tn{
         float: right;
@@ -31,29 +31,117 @@
 .footer-box{
     width: 100%;
     height: 90vh;
-    background-color: #111111;
+    background-color: $color-primary-main;
     padding:0 5rem;
+    
+    &--icon{
+        margin-top: 2rem;
+    }
+    
+    &--li{
+        font-size: 1.8rem;
+        color: $color-primary-sub;
+        transition: all .4s;
+        
+        &:not(:first-child){
+            margin-left: 2rem;
+        }
+        
+        &:hover{
+            color: $color-white;
+        }
+    }
     
     &--text{
         margin-top: 5rem;
     }
     
     &--main{
-        font-size: 2rem;
+        font-size: 1.6rem;
         color: $color-white;
         font-weight: 700;
         text-transform: uppercase;
     }
     
     &--sub{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         line-height: 2.5rem;
         color: $color-primary-sub;
         margin-top: 2rem;
     }
     
     &--menu{
-        margin-top: 3rem;
+        margin-top: 2rem;
         list-style: none;
+    }
+    
+    &--menu-items{
+        
+        &:not(:first-child){
+            margin-top: 2rem;
+        }
+    }
+    
+    &--link{
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: $color-primary-sub;
+        transition: all .4s;
+        
+        &:hover{
+            color: $color-white;
+        }
+    }
+    
+    &--logo{
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        margin-top: 7rem;
+    }
+    
+    &--form{
+        margin-top: 2rem;
+        
+        &:valid .fa{
+            display: none;
+        }
+        
+        &:valid .footer-box--btn--btn{
+            visibility: visible;
+        }
+    }
+    
+    &--input{
+        background-color: transparent;
+        width: 13rem;
+        border: none;
+        outline: none;
+        padding: .5rem;
+        color: $color-primary-sub;
+        font-size: 1.2rem;
+        
+        &::placeholder{
+            font-family: inherit;
+            color: $color-primary-sub;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.footer-copyright{
+    margin-top: 8rem;
+    font-size: 1.4rem;
+    color: $color-primary-sub;
+    word-spacing: .5rem;
+    
+    &--link{
+        color: orangered;
+        text-decoration: none;
+        transition: all .4s;
+        
+        &:hover{
+            color: $color-white;
+        }
     }
 }

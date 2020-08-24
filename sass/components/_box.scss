@@ -1,7 +1,7 @@
 .square--box{
         width: 1.5rem;
         height: 1.5rem;
-        background-color: #ff4500;
+        background-color: $color-box-bg;
         display: inline-block;
         margin: 1.5rem auto;
 }
@@ -12,7 +12,7 @@
     &--1{
         width: 1.5rem;
         height: 1.5rem;
-        background-color: #ff4500;
+        background-color: $color-box-bg;
         display: inline-block;
         margin-bottom: 1rem;
     }
@@ -24,12 +24,12 @@
     }
     
     &--2{
-        background-color: #228b22;
+        background-color: $color-dark-green;
         width: 8rem;
     }
     
     &--3{
-        background-color: #4169e1;
+        background-color: $color-box--btn;
         width: 6rem;
     }
 }

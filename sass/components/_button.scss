@@ -2,7 +2,7 @@
     
     &:link,
     &:visited{
-    background-color: #1e90ff;
+    background-color: $color-box--btn;
     padding: 1.5rem 2rem;
     display: inline-block;
     text-decoration: none;
@@ -12,6 +12,54 @@
     color: $color-primary-main;
     font-weight: 500;
     }
+    
+    &:hover{
+        transform: translateY(-.5rem);
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+    }
+    
+    &:active{
+        transform: translateY(.5rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+    }
+}
+
+.footer-box--btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: relative;
+    
+    .fa{
+        font-size: 2rem;
+    }
+    
+    &--btn{
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        visibility: hidden;
+        padding: 1rem;
+        background-color: $color-box-bg;
+        margin-top: -2rem;
+        cursor: pointer;
+        transition: visibility .8s;
+    }
+}
+
+.about-text--btn{
+    background-color: $color-box--btn;
+    padding:1.3rem 2rem;
+    border: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    margin-left: -.2rem;
+    transition: border .8s;
     
     &:hover{
         transform: translateY(-.5rem);
