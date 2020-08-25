@@ -452,15 +452,60 @@ body {
 .checkbox {
   display: none; }
 
-#section-pop {
-  width: 35%;
-  height: 70vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: red;
-  visibility: hidden; }
+.section-pop {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 99999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s; }
+  .section-pop:target {
+    opacity: 1;
+    visibility: visible; }
+  .section-pop:target .section-pop--content {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1; }
+  .section-pop--content {
+    width: 50%;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all .4s .2s;
+    opacity: 0; }
+  .section-pop--icon:link, .section-pop--icon:visited {
+    color: #111111;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s;
+    line-height: 1; }
+  .section-pop--icon:hover {
+    color: #228b22; }
+  .section-pop--text {
+    text-align: center; }
+  .section-pop .fa-handshake-o {
+    font-size: 15rem;
+    color: #228b22; }
+  .section-pop--main {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #111111;
+    margin-top: 5rem; }
+  .section-pop--sub {
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 1rem; }
 
 .footer-hero {
   width: 100%;
@@ -619,12 +664,10 @@ body {
   border-radius: 50%; }
 
 .log-body {
-  background-image: url(../img/bg-5.jpg);
-  background-size: cover;
-  background-position: center; }
+  background-color: #fff; }
 
 .top {
-  top: 50%; }
+  top: 40%; }
 
 .section-log--heading {
   font-size: 3.5rem;
@@ -686,7 +729,7 @@ body {
 .sideBar {
   width: 20%;
   height: 100vh;
-  background-color: #fff;
+  background-color: #111111;
   margin-top: -3rem;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5); }
   .sideBar--img {
@@ -703,7 +746,7 @@ body {
     margin-top: 2rem;
     text-transform: uppercase;
     font-size: 1.5rem;
-    color: #111111;
+    color: #fff;
     font-weight: 700; }
   .sideBar--nav {
     margin-top: 7rem;
@@ -755,8 +798,11 @@ body {
   .sideBar--link {
     text-decoration: none;
     font-size: 1.5rem;
-    color: #333;
-    margin-left: 1rem; }
+    color: #fff;
+    margin-left: 1rem;
+    transition: all .2s; }
+    .sideBar--link:hover {
+      color: #333; }
   .sideBar--btn {
     background-color: #4169e1;
     width: 90%;
@@ -793,10 +839,82 @@ body {
     margin-top: 2rem; }
   .section-user--heading {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
     color: #111111; }
+  .section-user--content {
+    width: 50%;
+    height: 90vh; }
+  .section-user--details {
+    padding: 2rem; }
+  .section-user--main {
+    display: block;
+    font-size: 1.6rem;
+    color: #111111;
+    font-weight: 500; }
+    .section-user--main:not(first-child) {
+      margin-top: 1rem; }
+  .section-user .fa {
+    margin-right: 1rem;
+    font-size: 1.8rem; }
+  .section-user--input {
+    width: 36rem;
+    height: 3rem;
+    padding: 2rem;
+    margin-top: 1rem;
+    background-color: transparent;
+    border: 1px solid #4169e1;
+    outline: none;
+    font-family: inherit;
+    font-size: 1.5rem; }
+    .section-user--input:valid + .fa-check {
+      visibility: visible;
+      color: #228b22; }
+  .section-user--date {
+    margin-top: 1.2rem;
+    position: relative;
+    font-family: 'lato', sans-serif; }
+  .section-user--select {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1.5rem;
+    outline: none;
+    border: 1px solid #4169e1;
+    display: inline-block;
+    max-width: 20%;
+    height: 70%;
+    padding: .5rem;
+    background-color: transparent;
+    box-sizing: inherit;
+    color: #111111; }
+    .section-user--select:not(:first-child) {
+      margin-left: 1.5rem; }
+  .section-user--group {
+    font-weight: normal; }
+  .section-user--btn {
+    float: right;
+    background-color: #228b22;
+    border: none;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #111111; }
+    .section-user--btn:hover, .section-user--btn:active {
+      outline: none; }
+  .section-user .fa-commenting {
+    color: #4169e1; }
+  .section-user .fa-map-marker {
+    color: crimson; }
+  .section-user .fa-send {
+    color: #228b22; }
+  .section-user .fa-close {
+    color: red; }
+  .section-user .fa-check {
+    margin-left: 1rem;
+    visibility: hidden;
+    transition: visible .4s; }
 
 .section-about {
   margin-top: 10rem;
