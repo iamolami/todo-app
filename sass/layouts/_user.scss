@@ -1,0 +1,170 @@
+.sideBar{
+    width: 20%;
+    height: 100vh;
+    background-color: $color-white;
+    margin-top: -3rem;
+    box-shadow: 0 1rem 1rem rgba($color-black, .5);
+    
+    &--img{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        margin: 3rem auto;
+
+    }
+    
+    &--user{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        margin-top: 2rem;
+    }
+    
+    &--main{
+        margin-top: 2rem;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        color: $color-primary-main;
+        font-weight: $default-weight;
+    }
+    
+    &--nav{
+        margin-top: 7rem;
+        text-align: center;
+        
+        .fa{
+            font-size: 1.5rem;
+            margin-left: 1rem;
+            border-radius: 3px;
+            text-align: center;
+            cursor: pointer;
+            
+            &:not(:last-child){
+                background-color: rgba($color-dark-green, .5);
+            }
+        }
+        
+        .fa-plus{
+            color: #32cd32;
+            background-color: rgba(lime, .2);
+            padding: .5rem 1rem;
+            border: 1px solid #32cd32;
+        }
+        
+        .fa-ellipsis-v{
+            color: #c71585;
+            background-color: rgba(#ff69b4, .5);
+            padding: .5rem 1rem;
+            border: 1px solid #ff1493;
+        }
+    }
+    
+    &--1{
+        color: #0000cd;
+        font-size: 1.2rem;
+        background-color: rgba(#0000ff, .5);
+        padding: .5rem 1rem;
+        border: 1px solid #0000cd;
+        border-radius: 3px;
+        font-weight: $default-weight;
+        cursor: pointer;
+    }
+    
+    &--navigation{
+        margin-top: 2rem;
+    }
+    
+    &--menu{
+        list-style: none;
+        padding-left: 2rem;
+    }
+    
+    &--menu-items{
+        
+        &:not(first-child){
+            margin-top: 3rem;
+        }
+        
+        .fa{
+            font-size: 1.6rem;
+        }
+        
+        .fa-home{
+            color: darkorange;
+        }
+        
+        .fa-check{
+            color: lime;
+        }
+        
+        .fa-close{
+            color: red;
+        }
+        
+        .fa-send{
+            color: $color-box-bg;
+        }
+    }
+    
+    &--link{
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: $color-primary-sub;
+        margin-left: 1rem;
+    }
+    
+    &--btn{
+        background-color: $color-box--btn;
+        width: 90%;
+        height: 3.7rem;
+        text-align: center;
+        margin-top: 2.5rem;
+        margin-left: 1rem;
+    }
+    
+    &--li{
+        font-size: 1.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-primary-main;
+        padding-top: 1rem;
+        display: inline-block;
+    }
+}
+
+.section-user{
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 80%;
+    height: 100vh;
+    
+    &--box{
+        text-align: center;
+        position: relative;
+    }
+    
+    &--img{
+        width: 10rem;
+        height: 10rem;
+        margin-left: -2rem;
+    }
+    
+    &--sub{
+        margin-top: -.5rem;
+        font-size: 1.6rem;
+        font-style: italic;
+    }
+    
+    &--task{
+        margin-top: 2rem;
+    }
+    
+    &--heading{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: $default-weight;
+        text-transform: uppercase;
+        color: $color-primary-main;
+    }
+}
