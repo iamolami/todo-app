@@ -62,21 +62,186 @@
                     <a href="#" class="sideBar--link">Share tasks with friends</a>
                 </li>
             </ul>
-            <div class="sideBar--btn"><a href="../index/todo.html" class="sideBar--li">log out</a></div>
+            <div class="sideBar--btn"><a href="#popup" class="sideBar--li">log out</a></div>
         </nav>
     </header>
     <main>
         <section class="section-user">
-            <div class="section-user--box">
-                    <img src="../img/logo.jpg" class="section-user--img">
-                <p class="section-user--sub">...Managing your daily tasks</p>
-            </div>
-            
             <div class="section-user--task">
-                <h3 class="section-user--heading">my tasks</h3>
+                <div class="row-1 center">
+                    <div class="section-user--content">
+                        <div class="section-user--text">
+                            <h3 class="section-user--heading">my tasks</h3>
+                            <div class="section-user--details">
+                                
+                                <label for="name" class="section-user--main">
+                                   <i class="fa fa-user"></i> Name of Task
+                                </label>
+                                <input type="text" id="name" name="size" class="section-user--input" required>
+                                <i class="fa fa-check"></i>
+                                
+                                <label for="textarea" class="section-user--main">
+                                    <i class="fa fa-commenting"></i>Description
+                                </label>
+                                <textarea id="textarea" rows="3" cols="10" class="section-user--input" required></textarea>
+                                <i class="fa fa-check"></i>
+                                <label for="location" class="section-user--main">
+                                   <i class="fa fa-map-marker"></i> Location
+                                </label>
+                                <input type="text" id="location" name="size" class="section-user--input" required>
+                                <i class="fa fa-check"></i>
+                                
+                                 <label for="date" class="section-user--main">
+                                     <i class="fa fa-send"></i>Begining Date
+                                </label>
+                                <div class="section-user--date">
+                                    <select class="section-user--select" id="date">
+                                        <option class="section-user--group">Day</option>
+                                        <option class="section-user--group">01</option>
+                                        <option class="section-user--group">02</option>
+                                        <option class="section-user--group">03</option>
+                                        <option class="section-user--group">04</option>
+                                        <option class="section-user--group">05</option>
+                                        <option class="section-user--group">06</option>
+                                        <option class="section-user--group">07</option>
+                                        <option class="section-user--group">08</option>
+                                        <option class="section-user--group">09</option>
+                                        <option class="section-user--group">10</option>
+                                        <option class="section-user--group">11</option>
+                                        <option class="section-user--group">12</option>
+                                        <option class="section-user--group">13</option>
+                                        <option class="section-user--group">14</option>
+                                        <option class="section-user--group">15</option>
+                                        <option class="section-user--group">16</option>
+                                        <option class="section-user--group">17</option>
+                                        <option class="section-user--group">18</option>
+                                        <option class="section-user--group">19</option>
+                                        <option class="section-user--group">20</option>
+                                        <option class="section-user--group">21</option>
+                                        <option class="section-user--group">22</option>
+                                        <option class="section-user--group">23</option>
+                                        <option class="section-user--group">24</option>
+                                        <option class="section-user--group">25</option>
+                                        <option class="section-user--group">26</option>
+                                        <option class="section-user--group">27</option>
+                                        <option class="section-user--group">28</option>
+                                        <option class="section-user--group">29</option>
+                                        <option class="section-user--group">30</option>
+                                        <option class="section-user--group">31</option>
+                                </select>
+                                
+                                <select class="section-user--select" id="date">
+                                    <option class="section-user--group">Month</option>
+                                    <option class="section-user--group">January</option>
+                                    <option class="section-user--group">Feburary</option>
+                                    <option class="section-user--group">March</option>
+                                    <option class="section-user--group">April</option>
+                                    <option class="section-user--group">May</option>
+                                    <option class="section-user--group">June</option>
+                                    <option class="section-user--group">July</option>
+                                    <option class="section-user--group">August</option>
+                                    <option class="section-user--group">September</option>
+                                    <option class="section-user--group">October</option>
+                                    <option class="section-user--group">November</option>
+                                    <option class="section-user--group">December</option>
+                                </select>
+                                
+                                <select class="section-user--select" id="date">
+                                    <option class="section-user--group">Year</option>
+                                    <option class="section-user--group">2020</option>
+                                    <option class="section-user--group">2021</option>
+                                    <option class="section-user--group">2022</option>
+                                    <option class="section-user--group">2023</option>
+                                    <option class="section-user--group">2024</option>
+                                    <option class="section-user--group">2025</option>
+                                    <option class="section-user--group">2026</option>
+                                    <option class="section-user--group">2027</option>
+                                    <option class="section-user--group">2028</option>
+                                    <option class="section-user--group">2029</option>
+                                    <option class="section-user--group">2030</option>
+                                </select>
+                                </div>
+                                
+                                <label class="section-user--main">
+                                    <i class="fa fa-close"></i>Expiring Date
+                                </label>
+                                <div class="section-user--date">
+                                    <select class="section-user--select">
+                                        <option class="section-user--group">Day</option>
+                                        <option class="section-user--group">01</option>
+                                        <option class="section-user--group">02</option>
+                                        <option class="section-user--group">03</option>
+                                        <option class="section-user--group">04</option>
+                                        <option class="section-user--group">05</option>
+                                        <option class="section-user--group">06</option>
+                                        <option class="section-user--group">07</option>
+                                        <option class="section-user--group">08</option>
+                                        <option class="section-user--group">09</option>
+                                        <option class="section-user--group">10</option>
+                                        <option class="section-user--group">11</option>
+                                        <option class="section-user--group">12</option>
+                                        <option class="section-user--group">13</option>
+                                        <option class="section-user--group">14</option>
+                                        <option class="section-user--group">15</option>
+                                        <option class="section-user--group">16</option>
+                                        <option class="section-user--group">17</option>
+                                        <option class="section-user--group">18</option>
+                                        <option class="section-user--group">19</option>
+                                        <option class="section-user--group">20</option>
+                                        <option class="section-user--group">21</option>
+                                        <option class="section-user--group">22</option>
+                                        <option class="section-user--group">23</option>
+                                        <option class="section-user--group">24</option>
+                                        <option class="section-user--group">25</option>
+                                        <option class="section-user--group">26</option>
+                                        <option class="section-user--group">27</option>
+                                        <option class="section-user--group">28</option>
+                                        <option class="section-user--group">29</option>
+                                        <option class="section-user--group">30</option>
+                                        <option class="section-user--group">31</option>
+                                </select>
+                                
+                                <select class="section-user--select" id="date">
+                                    <option class="section-user--group">Month</option>
+                                    <option class="section-user--group">January</option>
+                                    <option class="section-user--group">Feburary</option>
+                                    <option class="section-user--group">March</option>
+                                    <option class="section-user--group">April</option>
+                                    <option class="section-user--group">May</option>
+                                    <option class="section-user--group">June</option>
+                                    <option class="section-user--group">July</option>
+                                    <option class="section-user--group">August</option>
+                                    <option class="section-user--group">September</option>
+                                    <option class="section-user--group">October</option>
+                                    <option class="section-user--group">November</option>
+                                    <option class="section-user--group">December</option>
+                                </select>
+                                
+                                <select class="section-user--select" id="date">
+                                    <option class="section-user--group">Year</option>
+                                    <option class="section-user--group">2020</option>
+                                    <option class="section-user--group">2021</option>
+                                    <option class="section-user--group">2022</option>
+                                    <option class="section-user--group">2023</option>
+                                    <option class="section-user--group">2024</option>
+                                    <option class="section-user--group">2025</option>
+                                    <option class="section-user--group">2026</option>
+                                    <option class="section-user--group">2027</option>
+                                    <option class="section-user--group">2028</option>
+                                    <option class="section-user--group">2029</option>
+                                    <option class="section-user--group">2030</option>
+                                </select>
+                                </div>
+                            </div>
+                            <a href="#pop"><button type="submit" class="section-user--btn">add task</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    
+<!--FOOTER SECTION-->
     <footer class="footer">
         <div class="footer-hero sh-demo">
             <div class="footer__text">
@@ -176,5 +341,27 @@
             </div>
         </div>
     </footer>
+    
+    <section class="section-pop" id="popup">
+        <div class="section-pop--content">
+            <a href="../index/todo.html" class="section-pop--icon">&times;</a>
+            <div class="section-pop--text">
+                <i class="fa fa-handshake-o"></i>
+                <h1 class="section-pop--main">you've successfully log out</h1>
+                <p class="section-pop--sub">we will be expecting you back here</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section-pop" id="pop">
+        <div class="section-pop--content">
+            <a href="../index/todo.html" class="section-pop--icon">&times;</a>
+            <div class="section-pop--text">
+                <i class="fa fa-handshake-o"></i>
+                <h1 class="section-pop--main">you've successfully add a task</h1>
+                <p class="section-pop--sub">Managing your task is very important</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

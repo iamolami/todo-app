@@ -1,7 +1,7 @@
 .sideBar{
     width: 20%;
     height: 100vh;
-    background-color: $color-white;
+    background-color: $color-primary-main;
     margin-top: -3rem;
     box-shadow: 0 1rem 1rem rgba($color-black, .5);
     
@@ -24,7 +24,7 @@
         margin-top: 2rem;
         text-transform: uppercase;
         font-size: 1.5rem;
-        color: $color-primary-main;
+        color: $color-white;
         font-weight: $default-weight;
     }
     
@@ -109,8 +109,13 @@
     &--link{
         text-decoration: none;
         font-size: 1.5rem;
-        color: $color-primary-sub;
+        color: $color-white;
         margin-left: 1rem;
+        transition: all .2s;
+        
+        &:hover{
+            color: $color-primary-sub;
+        }
     }
     
     &--btn{
@@ -162,9 +167,119 @@
     
     &--heading{
         text-align: center;
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: $default-weight;
         text-transform: uppercase;
         color: $color-primary-main;
+    }
+    
+    &--content{
+        width: 50%;
+        height: 90vh;
+//        background-color: red;
+    }
+    
+    &--details{
+        padding: 2rem;
+    }
+    
+    &--main{
+        display: block;
+        font-size: 1.6rem;
+        color: $color-primary-main;
+        font-weight: 500;
+        
+        &:not(first-child){
+            margin-top: 1rem;
+        }
+    }
+    
+    .fa{
+        margin-right: 1rem;
+        font-size: 1.8rem;
+    }
+    
+    &--input{
+        width: 36rem;
+        height: 3rem;
+        padding: 2rem;
+        margin-top: 1rem;
+        background-color: transparent;
+        border: 1px solid $color-box--btn;
+        outline: none;
+        font-family: inherit;
+        font-size: 1.5rem;
+        
+        &:valid + .fa-check{
+            visibility: visible;
+            color: $color-dark-green;
+        }
+    }
+    
+    &--date{
+        margin-top: 1.2rem;
+        position: relative;
+        font-family: 'lato', sans-serif;
+    }
+    
+    &--select{
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 1.5rem;
+        outline: none;
+        border: 1px solid $color-box--btn;
+        display: inline-block;
+        max-width:20%;
+        height: 70%;
+        padding: .5rem;
+        background-color: transparent;
+        box-sizing: inherit;
+        color: $color-primary-main;
+        
+        &:not(:first-child){
+            margin-left: 1.5rem;
+        }
+    }
+    
+    &--group{
+       font-weight: normal;
+    }
+    
+    &--btn{
+        float: right;
+        background-color: $color-dark-green;
+        border: none;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        font-size: $default-size;
+        cursor: pointer;
+        color: $color-primary-main;
+        
+        &:hover,
+        &:active{
+            outline: none;
+        }
+    }
+    
+    .fa-commenting{
+        color: $color-box--btn;
+    }
+    
+    .fa-map-marker{
+        color: crimson;
+    }
+    
+    .fa-send{
+        color: $color-dark-green;
+    }
+    
+    .fa-close{
+        color: red;
+    }
+    
+    .fa-check{
+        margin-left: 1rem;
+        visibility: hidden;
+        transition: visible .4s;
     }
 }
