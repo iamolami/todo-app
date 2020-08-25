@@ -2,7 +2,11 @@
     
     &:link,
     &:visited{
+<<<<<<< HEAD
     background-color: $color-box--btn;
+=======
+    background-color: #1e90ff;
+>>>>>>> b84bba5... initial commit
     padding: 1.5rem 2rem;
     display: inline-block;
     text-decoration: none;
@@ -22,6 +26,7 @@
         transform: translateY(.5rem);
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);
     }
+<<<<<<< HEAD
 }
 
 .footer-box--btn{
@@ -70,4 +75,6 @@
         transform: translateY(.5rem);
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);
     }
+=======
+>>>>>>> b84bba5... initial commit
 }

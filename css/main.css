@@ -6,6 +6,7 @@
     opacity: 1;
     transform: translateY(0); } }
 
+<<<<<<< HEAD
 @keyframes moveInleft {
   0% {
     opacity: 0;
@@ -26,6 +27,8 @@
     opacity: 1;
     transform: translateX(0); } }
 
+=======
+>>>>>>> b84bba5... initial commit
 * {
   margin: 0;
   padding: 0;
@@ -82,6 +85,7 @@ body {
     font-size: 1.5rem;
     color: #333;
     line-height: 2rem; }
+<<<<<<< HEAD
   .about-text--form {
     margin-top: 5rem; }
   .about-text--input {
@@ -99,6 +103,8 @@ body {
       border: 1px solid #228b22; }
     .about-text--input:valid + .about-text--btn {
       background-color: #228b22; }
+=======
+>>>>>>> b84bba5... initial commit
 
 .features-text--main {
   font-size: 4.5rem;
@@ -127,8 +133,12 @@ body {
   background-image: url(../img/bg-5.jpg);
   background-position: center;
   background-size: cover;
+<<<<<<< HEAD
   box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
   animation: moveInleft .8s ease-out; }
+=======
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+>>>>>>> b84bba5... initial commit
   .premium-card--text {
     padding: 2rem; }
   .premium-card--heading {
@@ -206,6 +216,7 @@ body {
     color: darkorange;
     font-size: 1.6rem; }
 
+<<<<<<< HEAD
 .icon-basic {
   display: inline-block;
   position: fixed;
@@ -223,6 +234,10 @@ body {
 
 .U-margin-small {
   margin-top: 3rem; }
+=======
+.U-margin-small {
+  margin-top: 2rem; }
+>>>>>>> b84bba5... initial commit
 
 .center {
   justify-content: center; }
@@ -234,14 +249,21 @@ body {
 
 .U-left {
   text-align: left;
+<<<<<<< HEAD
   padding-left: 7rem; }
+=======
+  padding-left: 5rem; }
+>>>>>>> b84bba5... initial commit
 
 .U-margin-big {
   margin-top: 7rem; }
 
+<<<<<<< HEAD
 .U-margin-left {
   margin-left: 4rem; }
 
+=======
+>>>>>>> b84bba5... initial commit
 .U-margin-bg {
   margin: 5rem 0; }
 
@@ -251,6 +273,7 @@ body {
 .animated-2 {
   animation-delay: 2s; }
 
+<<<<<<< HEAD
 .U-top {
   margin-top: -1.5rem; }
 
@@ -285,6 +308,10 @@ body {
 
 .commonBtn:link, .commonBtn:visited {
   background-color: #4169e1;
+=======
+.commonBtn:link, .commonBtn:visited {
+  background-color: #1e90ff;
+>>>>>>> b84bba5... initial commit
   padding: 1.5rem 2rem;
   display: inline-block;
   text-decoration: none;
@@ -302,6 +329,7 @@ body {
   transform: translateY(0.5rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
+<<<<<<< HEAD
 .footer-box--btn {
   background-color: transparent;
   border: none;
@@ -340,6 +368,8 @@ body {
     transform: translateY(0.5rem);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
+=======
+>>>>>>> b84bba5... initial commit
 .header__img {
   width: 100%; }
 
@@ -355,21 +385,70 @@ body {
   left: 57%;
   border-radius: 50%;
   transform: rotate(-25deg);
+<<<<<<< HEAD
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
   animation: moveInleft .8s ease-out; }
+=======
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+>>>>>>> b84bba5... initial commit
 
 .premium-logo {
   width: 100%;
   border-radius: 50%; }
 
+<<<<<<< HEAD
 .brand__logo {
   width: 7rem;
   height: 7rem; }
+=======
+.square--box {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #ff4500;
+  display: inline-block;
+  margin: 1.5rem auto; }
+
+.line {
+  margin-top: -1rem; }
+  .line--1 {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #ff4500;
+    display: inline-block;
+    margin-bottom: 1rem; }
+  .line--2, .line--3 {
+    height: .1rem;
+    border-radius: 3px;
+    display: inline-block; }
+  .line--2 {
+    background-color: #228b22;
+    width: 8rem; }
+  .line--3 {
+    background-color: #4169e1;
+    width: 6rem; }
+
+.header {
+  padding-left: 5rem;
+  padding-top: 3rem;
+  height: 100vh; }
+  .header__logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #111111; }
+  .header__left-col {
+    flex-basis: 38%; }
+  .header__right-col {
+    flex-basis: 60%;
+    margin-left: 1rem; }
+>>>>>>> b84bba5... initial commit
 
 .navigation {
   float: right;
   position: fixed;
   border-radius: 100%;
+<<<<<<< HEAD
   top: 2rem;
   right: 3rem;
   z-index: 2000; }
@@ -404,11 +483,18 @@ body {
     font-size: 1.6rem; }
     .navigation--link:hover {
       color: #333; }
+=======
+  top: 3rem;
+  right: 3rem;
+  z-index: 3000;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5); }
+>>>>>>> b84bba5... initial commit
   .navigation__input {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background-color: #111111;
+<<<<<<< HEAD
     display: block;
     text-align: center;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
@@ -417,12 +503,23 @@ body {
   .navigation__icon {
     margin-top: 1.9rem;
     position: relative; }
+=======
+    display: inline-block;
+    text-align: center; }
+  .navigation__icon {
+    position: relative;
+    margin-top: 1.9rem; }
+>>>>>>> b84bba5... initial commit
     .navigation__icon, .navigation__icon::before, .navigation__icon:after {
       width: 3rem;
       height: 2px;
       background-color: #fff;
+<<<<<<< HEAD
       display: inline-block;
       transition: transform .2s; }
+=======
+      display: inline-block; }
+>>>>>>> b84bba5... initial commit
     .navigation__icon::before {
       content: "";
       position: absolute;
@@ -442,16 +539,20 @@ body {
   .checkbox:checked + .navigation__input .navigation__icon::after {
     transform: rotate(135deg);
     top: 0; }
+<<<<<<< HEAD
   .checkbox:checked ~ .navigation--background {
     transform: scale(10); }
   .checkbox:checked ~ .navigation--nav {
     visibility: visible;
     width: 20%;
     animation: left .8s ease-out; }
+=======
+>>>>>>> b84bba5... initial commit
 
 .checkbox {
   display: none; }
 
+<<<<<<< HEAD
 #section-pop {
   width: 35%;
   height: 70vh;
@@ -461,11 +562,24 @@ body {
   transform: translate(-50%, -50%);
   background-color: red;
   visibility: hidden; }
+=======
+.U-center {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%; }
+>>>>>>> b84bba5... initial commit
 
 .footer-hero {
   width: 100%;
   height: 30vh;
+<<<<<<< HEAD
   background-color: #ff4500; }
+=======
+  background-color: orangered; }
+>>>>>>> b84bba5... initial commit
   .footer-hero--tn {
     float: right;
     display: inline-block;
@@ -489,6 +603,7 @@ body {
   height: 90vh;
   background-color: #111111;
   padding: 0 5rem; }
+<<<<<<< HEAD
   .footer-box--icon {
     margin-top: 2rem; }
   .footer-box--li {
@@ -503,15 +618,26 @@ body {
     margin-top: 5rem; }
   .footer-box--main {
     font-size: 1.6rem;
+=======
+  .footer-box--text {
+    margin-top: 5rem; }
+  .footer-box--main {
+    font-size: 2rem;
+>>>>>>> b84bba5... initial commit
     color: #fff;
     font-weight: 700;
     text-transform: uppercase; }
   .footer-box--sub {
+<<<<<<< HEAD
     font-size: 1.4rem;
+=======
+    font-size: 1.5rem;
+>>>>>>> b84bba5... initial commit
     line-height: 2.5rem;
     color: #333;
     margin-top: 2rem; }
   .footer-box--menu {
+<<<<<<< HEAD
     margin-top: 2rem;
     list-style: none; }
   .footer-box--menu-items:not(:first-child) {
@@ -558,6 +684,10 @@ body {
     transition: all .4s; }
     .footer-copyright--link:hover {
       color: #fff; }
+=======
+    margin-top: 3rem;
+    list-style: none; }
+>>>>>>> b84bba5... initial commit
 
 .row {
   max-width: 114rem;
@@ -591,6 +721,7 @@ body {
   display: flex;
   flex-wrap: wrap; }
 
+<<<<<<< HEAD
 .header {
   padding-left: 7rem;
   padding-top: 3rem;
@@ -801,6 +932,11 @@ body {
 .section-about {
   margin-top: 10rem;
   padding-left: 7rem;
+=======
+.section-about {
+  margin-top: 10rem;
+  padding-left: 5rem;
+>>>>>>> b84bba5... initial commit
   text-align: center; }
 
 .section-features {
@@ -814,9 +950,17 @@ body {
 
 .section-testimony {
   margin-top: 15rem;
+<<<<<<< HEAD
   padding: 0 7rem;
   margin-bottom: 2rem; }
 
 .footer {
   margin-top: 12rem;
+=======
+  padding: 0 3rem;
+  margin-bottom: 2rem; }
+
+.footer {
+  margin-top: 10rem;
+>>>>>>> b84bba5... initial commit
   margin-bottom: 2rem; }
