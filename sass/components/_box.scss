@@ -4,6 +4,12 @@
         background-color: $color-box-bg;
         display: inline-block;
         margin: 1.5rem auto;
+    
+    @include responsive(phone){
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 2.2rem auto;
+    }
 }
 
 .line{
@@ -15,21 +21,39 @@
         background-color: $color-box-bg;
         display: inline-block;
         margin-bottom: 1rem;
+        
+        @include responsive(phone){
+            width: 2.5rem;
+            height: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
     }
     &--2,
     &--3{
         height: .1rem;
         border-radius: 3px;
         display: inline-block;
+        
+        @include responsive(phone){
+           height: .2rem;
+        }
     }
     
     &--2{
         background-color: $color-dark-green;
         width: 8rem;
+        
+        @include responsive(phone){
+           width: 10rem;
+        }
     }
     
     &--3{
         background-color: $color-box--btn;
         width: 6rem;
+        
+        @include responsive(phone){
+           width: 8rem;
+        }
     }
 }

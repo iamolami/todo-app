@@ -11,6 +11,11 @@
     transition: all .2s;
     color: $color-primary-main;
     font-weight: 500;
+        
+        @include responsive(phone){
+            padding: 2rem 3rem;
+            font-size: 2rem;
+        }
     }
     
     &:hover{
@@ -52,7 +57,9 @@
 
 .about-text--btn{
     background-color: $color-box--btn;
-    padding:1.3rem 2rem;
+    width: 10rem;
+    height: 5rem;
+    padding: 1.3rem 1rem;
     border: none;
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -60,6 +67,11 @@
     cursor: pointer;
     margin-left: -.2rem;
     transition: border .8s;
+    
+    @include responsive(phone){
+            width: 12rem;
+            height: 7rem;
+        }
     
     &:hover{
         transform: translateY(-.5rem);

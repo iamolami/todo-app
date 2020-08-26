@@ -17,7 +17,20 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 62.5%; //1rem = 16px, 10px/16px = 62.5%
+
+    
+    @include responsive(tab-land){
+        font-size: 56.25%;  //9px since 1rem = 16px, 9/16 < 1200px;
+    }
+    
+    @include responsive(tab-scape){  // < 900px;
+        font-size: 50%;
+    }
+    
+    @include responsive(big-screen){
+        font-size: 75%;
+    }
 }
 
 body{

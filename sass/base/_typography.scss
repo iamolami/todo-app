@@ -7,20 +7,39 @@ body{
     margin-top: 5rem;
     max-width: 45rem;
     
+    @include responsive(phone){
+        max-width: 60rem;
+        margin-top: 6rem;        
+    }
+    
     &--main{
         font-size: 4rem;
         font-weight: $default-weight;
         line-height: 5rem;
+        
+        @include responsive(phone){
+            font-size: 5rem;
+            line-height: 6rem;
+        }
     }
     
     &--sub{
         font-size: $default-size;
         color: $color-primary-sub;
         line-height: 2.5rem;
+        
+        @include responsive(phone){
+            font-size: 2.2rem;
+            line-height: 3.5rem;
+        }
     }
     
     &--btn{
         margin-top: 2rem;
+        
+        @include responsive(phone){
+            margin-top: 3rem;
+        }
     }
 }
 
@@ -30,6 +49,10 @@ body{
     text-transform: uppercase;
     font-weight: $default-weight;
     margin-bottom: 3rem;
+    
+    @include responsive(phone){
+            font-size: 3.7rem;
+        }
 }
 
 .about-text{
@@ -37,17 +60,31 @@ body{
     margin-top: 1rem;
     padding-right: 5rem;
     
+    @include responsive(phone){
+            margin-top: 1.2rem;
+        }
+    
     &--main{
         font-size: 1.8rem;
         font-weight: 600;
         color: $color-primary-main;
         margin-bottom: 1.5rem;
+        
+        @include responsive(phone){
+            font-size: 2.7rem;
+            margin-bottom: 2.3rem;
+        }
     }
     
     &--sub{
         font-size: $default-size;
         color: $color-primary-sub;
         line-height: 2rem;
+        
+        @include responsive(phone){
+            font-size: 2.2rem;
+            line-height: 3.2rem;
+        }
     }
     
     &--form{
@@ -66,6 +103,12 @@ body{
         padding: .2rem 1rem;
         transition: border .8s;
         
+        @include responsive(phone){
+            width: 50rem;
+            height: 7rem;
+            font-size: 2.5rem;
+        }
+        
         &:valid{
             border: 1px solid $color-dark-green;
         }
@@ -83,6 +126,10 @@ body{
         font-size: 4.5rem;
         font-weight: 500;
         color: $color-primary-main;
+        
+        @include responsive(phone){
+           display: inline-block;
+        }
     }
     
     &--sub{
@@ -90,6 +137,10 @@ body{
         margin-top: .5rem;
         color: $color-primary-sub;
         font-weight: 700;
+        
+        @include responsive(phone){
+           display: inline-block;
+        }
     }
 }
 
@@ -103,6 +154,10 @@ body{
     font-weight: $default-weight;
     text-align: center;
     text-transform: uppercase;
+    
+    @include responsive(phone){
+           font-size: 3.7rem;
+        }
 }
 
 .premium-card{
@@ -115,14 +170,29 @@ body{
     box-shadow: 1rem 1rem 1rem rgba($color-black, .2);
     animation: moveInleft .8s ease-out;
     
+    
+    @include responsive(phone){
+        width: 50rem;
+        height: 175vh;
+        animation: none;
+    }
+    
     &--text{
         padding: 2rem;
+        
+        @include responsive(phone){
+           padding: 3rem;
+        }
     }
     
     &--heading{
         font-size: 3.2rem;
         font-weight: 500;
         letter-spacing: .2rem;
+        
+        @include responsive(phone){
+           font-size: 3.7rem;
+        }
     }
     
     &--price{
@@ -130,6 +200,10 @@ body{
         font-weight: 700;
         margin: 2rem 0;
         color: crimson;
+        
+        @include responsive(phone){
+           font-size: 5.2rem;
+        }
     }
     
     &--sub{
@@ -139,19 +213,37 @@ body{
         margin-top: 2rem;
         padding-bottom: 1.5rem;
         border-bottom: 1px solid $color-primary-sub;
+        
+        @include responsive(phone){
+           font-size: 2.2rem;
+            line-height: 3rem;
+            padding-bottom: 2rem;
+        }
     }
     
     &--menu{
         margin-top: 2rem;
         list-style: none;
+        
+        @include responsive(phone){
+           margin-top: 3.2rem;
+        }
     }
     
     &--menu-items{
         font-size: 1.6rem;
         color: $color-primary-main;
         
+        @include responsive(phone){
+           font-size: 2.2rem;
+        }
+        
         &:not(:first-child){
             margin-top: 1.8rem;
+            
+                @include responsive(phone){
+                   margin-top: 2rem;
+            }
         }
     }
     
@@ -159,6 +251,11 @@ body{
         margin-right: 1rem;
         font-size: 1.6rem;
         color: $color-primary-main;
+        
+        @include responsive(phone){
+            font-size: 2.2rem;
+            margin-right: 1.5rem;
+        }
     }
 }
 
@@ -170,6 +267,10 @@ body{
     text-align: center;
     margin-bottom: 2rem;
     color: $color-primary-main;
+    
+    @include responsive(phone){
+           font-size: 3.7rem;
+        }
 }
 
 .testimony-background{
@@ -184,17 +285,30 @@ body{
     animation: moveInbutton .8s ease-out;
     animation-fill-mode: backwards;
     backface-visibility: hidden;
+    
+    @include responsive(phone){
+        height: 110vh;
+        animation: none;
+        }
 }
 
 .testimony__text{
     padding: 0 2rem;
+    
+    @include responsive(phone){
+           padding: 0 3rem;
+        }
     &--pic{
         width: 10rem;
         height: 10rem;
         border-radius: 50%;
         margin-top: -5rem;
-//        border-bottom: 5px solid orangered;
         box-shadow: .5rem .5rem .5rem rgba($color-black, .2);
+        
+        @include responsive(phone){
+           width: 17rem;
+            height: 17rem;
+        }
     }
     
     &--sub{
@@ -202,6 +316,12 @@ body{
         font-size: 1.6rem;
         line-height: 2.5rem;
         color: $color-primary-sub;
+        
+        @include responsive(phone){
+           margin-top: 3.7rem;
+            font-size: 2.2rem;
+            line-height: 3rem;
+        }
     }
     
     &--main{
@@ -210,6 +330,11 @@ body{
         text-transform: uppercase;
         font-weight: 700;
         color: $color-primary-main;
+        
+        @include responsive(phone){
+           margin-top: 2rem;
+            font-size: 2rem;
+        }
     }
     
     &--rating{
@@ -219,6 +344,10 @@ body{
     .fa{
         color: darkorange;
         font-size: 1.6rem;
+        
+        @include responsive(phone){
+           font-size: 1.8rem;
+        }
     }
 }
 
@@ -228,14 +357,26 @@ body{
     top: 40%;
     left: 2%;
     
+    @include responsive(phone){
+           top: 50%;
+        }
+    
     &--link{
         display: block;
         text-decoration: none;
         font-size: 2rem;
         color: $color-primary-main;
         
+        @include responsive(phone){
+           font-size: 2.7rem;
+        }
+        
         &:not(:first-child){
             margin-top: 1.5rem;
+            
+                @include responsive(phone){
+                   margin-top: 1.8rem;
+            }
         }
         
         &:hover{

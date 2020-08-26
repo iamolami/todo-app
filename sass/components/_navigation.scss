@@ -7,8 +7,8 @@
     z-index: 2000;
     
     &--background{
-        height: 60px;
-        width: 60px;
+        height: 6rem;
+        width: 6rem;
         border-radius: 50%;
         position: fixed;
         top: 2rem;
@@ -16,6 +16,11 @@
         background-color: paleturquoise;
         z-index: -800;
         transition: all .5s;
+        
+         @include responsive(phone){
+                height: 9rem;
+                width: 9rem;
+            }
     }
     
     &--nav{
@@ -31,6 +36,10 @@
         list-style: none;
         float: right;
         margin-right: 10rem;
+        
+        @include responsive(phone){
+                margin-right: 11rem;
+            }
     }
     
     &--li{
@@ -49,11 +58,15 @@
         &:hover{
             color: $color-primary-sub;
         }
+        
+        @include responsive(phone){
+                font-size: 2rem;
+            }
     }
     
     &__input{
-    width: 60px;
-    height: 60px;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
     background-color: $color-primary-main;
     display: block;
@@ -61,19 +74,33 @@
     box-shadow: 0 1rem 1rem rgba($color-black, .2);
     z-index: 3000;
     cursor: pointer;
+        
+        @include responsive(phone){
+            width: 9rem;
+            height: 9rem;
+        }
     }
     
     &__icon{
     margin-top: 1.9rem;
     position: relative;
+        
+        @include responsive(phone){
+                margin-top: 2.7rem;
+            }
         &,
         &::before,
         &:after {
         width: 3rem;
-        height: 2px;
+        height: .2rem;
         background-color: #fff;
         display: inline-block;
         transition: transform .2s;
+            
+            @include responsive(phone){
+                width: 5rem;
+                height: .3rem;
+            }
         }
         
         &::before{
@@ -81,6 +108,10 @@
             position: absolute;
             left: 0;
             top: 1rem;
+            
+            @include responsive(phone){
+                top: 1.5rem;
+            }
         }
         
         &::after{
@@ -88,12 +119,21 @@
             position: absolute;
             left: 0;
             top: 2rem;
+            
+            @include responsive(phone){
+                top: 3rem;
+            }
         }
     }
     
     .checkbox:checked + &__input &__icon{
         background-color: transparent;
-        margin-top: 3rem;
+        margin-top: 2rem;
+        
+         @include responsive(phone){
+                margin-top: 4rem;
+            }
+        
     }
     
     .checkbox:checked + &__input &__icon::before{
@@ -109,12 +149,20 @@
     
     .checkbox:checked ~ &--background{
         transform: scale(10);
+        
+        @include responsive(phone){
+                transform: scale(6);
+            }
     }
     
     .checkbox:checked ~ &--nav{
         visibility: visible;
         width: 20%;
         animation: left .8s ease-out;
+        
+        @include responsive(phone){
+                width: 30%;
+            }
     }
 }
 

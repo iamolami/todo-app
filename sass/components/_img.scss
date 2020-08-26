@@ -1,5 +1,10 @@
 .header__img{
     width: 100%;
+    
+    @include responsive(phone){
+        opacity: 0;
+        width: 0;
+    }
 }
 
 .U-center--img{
@@ -27,4 +32,9 @@
 .brand__logo{
     width: 7rem;
     height: 7rem;
+    
+    @include responsive(phone){
+        opacity: 0;
+        width: 0;
+    }
 }
