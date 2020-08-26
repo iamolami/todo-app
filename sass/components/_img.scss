@@ -1,5 +1,10 @@
 .header__img{
     width: 100%;
+    
+    @include responsive(phone){
+        opacity: 0;
+        width: 0;
+    }
 }
 
 .U-center--img{
@@ -32,6 +37,14 @@
 .brand__logo{
     width: 7rem;
     height: 7rem;
+<<<<<<< HEAD
 =======
 >>>>>>> b84bba5... initial commit
+=======
+    
+    @include responsive(phone){
+        opacity: 0;
+        width: 0;
+    }
+>>>>>>> Front
 }

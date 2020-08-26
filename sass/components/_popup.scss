@@ -30,6 +30,8 @@
         transform: translate(-50%, -50%) scale(.25);
         transition: all .4s .2s;
         opacity: 0;
+        box-shadow: 1rem 1rem 1rem rgba($color-black, .9);
+        border-radius: 3px;
     }
     
     &--icon{
@@ -56,20 +58,21 @@
         text-align: center;
     }
     
-    .fa-handshake-o{
+    .fa-handshake-o,
+    .fa-check{
         font-size: 15rem;
         color: $color-dark-green;
     }
     
     &--main{
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-transform: uppercase;
         color: $color-primary-main;
         margin-top: 5rem;
     }
     
     &--sub{
-        font-size: 2.5rem;
+        font-size: 2rem;
         color: $color-primary-sub;
         margin-top: 1rem;
     }

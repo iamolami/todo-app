@@ -15,6 +15,10 @@
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
         }
+        
+        @include responsive(phone){
+            width: 100% !important;
+        }
 
     }
 

@@ -1,9 +1,9 @@
 .sideBar{
     width: 20%;
-    height: 100vh;
-    background-color: $color-primary-main;
+    height: 130vh;
+    background-color: $color-black;
     margin-top: -3rem;
-    box-shadow: 0 1rem 1rem rgba($color-black, .5);
+    box-shadow: 0 1rem 1rem rgba($color-black, .2);
     
     &--img{
         width: 10rem;
@@ -173,9 +173,9 @@
         color: $color-primary-main;
     }
     
-    &--content{
+    &--content-1{
         width: 50%;
-        height: 90vh;
+        height: 130vh;
 //        background-color: red;
     }
     
@@ -188,9 +188,10 @@
         font-size: 1.6rem;
         color: $color-primary-main;
         font-weight: 500;
+        margin-left: -.5rem;
         
         &:not(first-child){
-            margin-top: 1rem;
+            margin-top: 2.5rem;
         }
     }
     
@@ -232,12 +233,13 @@
         max-width:20%;
         height: 70%;
         padding: .5rem;
+        margin-top: .8rem;
         background-color: transparent;
         box-sizing: inherit;
         color: $color-primary-main;
         
         &:not(:first-child){
-            margin-left: 1.5rem;
+            margin-left: 1.8rem;
         }
     }
     

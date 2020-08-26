@@ -9,6 +9,11 @@
     height: 100vh;
 >>>>>>> b84bba5... initial commit
     
+    @include responsive(phone){
+        padding-left: 6rem;
+        padding-top: 5rem;
+    }
+    
     &__logo{
         font-size: 2.5rem;
         font-weight: 700;
@@ -19,6 +24,12 @@
         text-decoration: none;
         text-transform: uppercase;
         color: $color-primary-main;
+        
+        @include responsive(phone){
+            font-size: 6rem;
+            top: 5%;
+            left: 5%;
+        }
 
 =======
         text-decoration: none;
@@ -29,12 +40,23 @@
     
     &__left-col{
         flex-basis: 38%;
+        
+            @include responsive(phone){
+                flex-basis: 100%;
+            }
     }
     
     &__right-col{
         flex-basis: 60%;
         margin-left: 1rem;
+        
+        @include responsive(phone){
+            opacity: 0;
+            flex-basis:  0;
+            margin-left: 0;
+        }
     }
+<<<<<<< HEAD
 }
 
 <<<<<<< HEAD
@@ -110,6 +132,10 @@
         display: none;
     }
 >>>>>>> b84bba5... initial commit
+=======
+
+}
+>>>>>>> Front
 
 .U-center{
     position: absolute;
