@@ -1,11 +1,7 @@
 .square--box{
         width: 1.5rem;
         height: 1.5rem;
-<<<<<<< HEAD
         background-color: $color-box-bg;
-=======
-        background-color: #ff4500;
->>>>>>> b84bba5... initial commit
         display: inline-block;
         margin: 1.5rem auto;
     
@@ -22,11 +18,7 @@
     &--1{
         width: 1.5rem;
         height: 1.5rem;
-<<<<<<< HEAD
         background-color: $color-box-bg;
-=======
-        background-color: #ff4500;
->>>>>>> b84bba5... initial commit
         display: inline-block;
         margin-bottom: 1rem;
         
@@ -48,11 +40,7 @@
     }
     
     &--2{
-<<<<<<< HEAD
         background-color: $color-dark-green;
-=======
-        background-color: #228b22;
->>>>>>> b84bba5... initial commit
         width: 8rem;
         
         @include responsive(phone){
@@ -61,11 +49,7 @@
     }
     
     &--3{
-<<<<<<< HEAD
         background-color: $color-box--btn;
-=======
-        background-color: #4169e1;
->>>>>>> b84bba5... initial commit
         width: 6rem;
         
         @include responsive(phone){

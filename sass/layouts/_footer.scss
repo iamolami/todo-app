@@ -1,11 +1,7 @@
 .footer-hero{
     width: 100%;
     height: 30vh;
-<<<<<<< HEAD
     background-color: $color-box-bg;
-=======
-    background-color: orangered;
->>>>>>> b84bba5... initial commit
     
     @include responsive(phone){
            height: 40vh;
@@ -55,11 +51,7 @@
 
 .footer-box{
     width: 100%;
-<<<<<<< HEAD
     height: 90vh;
-<<<<<<< HEAD
-=======
->>>>>>> Front
     background-color: $color-primary-main;
     padding:0 5rem;
     
@@ -93,21 +85,12 @@
         }
     }
     
-=======
-    background-color: #111111;
-    padding:0 5rem;
-    
->>>>>>> b84bba5... initial commit
     &--text{
         margin-top: 5rem;
     }
     
     &--main{
-<<<<<<< HEAD
         font-size: 1.6rem;
-=======
-        font-size: 2rem;
->>>>>>> b84bba5... initial commit
         color: $color-white;
         font-weight: 700;
         text-transform: uppercase;
@@ -118,11 +101,7 @@
     }
     
     &--sub{
-<<<<<<< HEAD
         font-size: 1.4rem;
-=======
-        font-size: 1.5rem;
->>>>>>> b84bba5... initial commit
         line-height: 2.5rem;
         color: $color-primary-sub;
         margin-top: 2rem;
@@ -133,7 +112,6 @@
     }
     
     &--menu{
-<<<<<<< HEAD
         margin-top: 2rem;
         list-style: none;
     }
@@ -231,9 +209,4 @@
             color: $color-white;
         }
     }
-=======
-        margin-top: 3rem;
-        list-style: none;
-    }
->>>>>>> b84bba5... initial commit
 }

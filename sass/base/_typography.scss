@@ -86,7 +86,6 @@ body{
             line-height: 3.2rem;
         }
     }
-<<<<<<< HEAD
     
     &--form{
         margin-top: 5rem;
@@ -118,8 +117,6 @@ body{
             background-color: $color-dark-green;
         }
     }
-=======
->>>>>>> b84bba5... initial commit
 }
 
 //FEATURES SECTION
@@ -171,11 +168,7 @@ body{
     background-position: center;
     background-size: cover;
     box-shadow: 1rem 1rem 1rem rgba($color-black, .2);
-<<<<<<< HEAD
     animation: moveInleft .8s ease-out;
-=======
->>>>>>> b84bba5... initial commit
-    
     
     @include responsive(phone){
         width: 50rem;
@@ -355,7 +348,6 @@ body{
            font-size: 1.8rem;
         }
     }
-<<<<<<< HEAD
 }
 
 .icon-basic{
@@ -390,6 +382,4 @@ body{
             color: $color-box--btn;
         }
     }
-=======
->>>>>>> b84bba5... initial commit
 }

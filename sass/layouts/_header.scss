@@ -1,13 +1,10 @@
 .header{
-<<<<<<< HEAD
     padding-left: 7rem;
     padding-top: 3rem;
     position: relative;
-=======
     padding-left: 5rem;
     padding-top: 3rem;
     height: 100vh;
->>>>>>> b84bba5... initial commit
     
     @include responsive(phone){
         padding-left: 6rem;
@@ -17,7 +14,6 @@
     &__logo{
         font-size: 2.5rem;
         font-weight: 700;
-<<<<<<< HEAD
         position: absolute;
         top: 10%;
         left: 12%;
@@ -30,12 +26,6 @@
             top: 5%;
             left: 5%;
         }
-
-=======
-        text-decoration: none;
-        text-transform: uppercase;
-        color: $color-primary-main;
->>>>>>> b84bba5... initial commit
     }
     
     &__left-col{
@@ -56,12 +46,8 @@
             margin-left: 0;
         }
     }
-<<<<<<< HEAD
 }
 
-<<<<<<< HEAD
-
-=======
 .navigation{
     float: right;
     position: fixed;
@@ -131,11 +117,6 @@
 .checkbox{
         display: none;
     }
->>>>>>> b84bba5... initial commit
-=======
-
-}
->>>>>>> Front
 
 .U-center{
     position: absolute;
