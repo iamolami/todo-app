@@ -228,8 +228,6 @@ body{
     box-shadow: 1rem 1rem 1rem rgba($color-black, .2);
     animation: moveInleft .8s ease-out;
     
-<<<<<<< HEAD
-=======
     @include responsive(tab-port){ 
         height: 135vh;
     }
@@ -240,7 +238,6 @@ body{
         height: 175vh;
     }
     
->>>>>>> Front
     @include responsive(phone){
         width: 50rem;
         height: 175vh;

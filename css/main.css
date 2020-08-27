@@ -1167,17 +1167,13 @@ body {
 .header {
   padding-left: 7rem;
   padding-top: 3rem;
-<<<<<<< HEAD
   position: relative;
   padding-left: 5rem;
   padding-top: 3rem;
   height: 100vh; }
-=======
-  position: relative; }
   @media (max-width: 56.25em) {
     .header {
       padding-left: 8rem; } }
->>>>>>> Front
   @media (max-width: 37.5em) {
     .header {
       padding-left: 8rem;
