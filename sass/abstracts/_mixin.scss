@@ -17,7 +17,7 @@
 Breakpoint argument choices
 - Phone
 - tab-port
-- tab-land
+- tab-scape
 - big-screen
 */
 
@@ -26,11 +26,11 @@ Breakpoint argument choices
         @media (max-width: 37.5em) {@content;}   //600px
     }
     
-    @if $breakpoint == tab-port{
+    @if $breakpoint == tab-scape{
         @media (max-width: 56.25em) {@content;}   //900px
     }
     
-    @if $breakpoint == tab-scape{
+    @if $breakpoint == tab-port{
         @media (max-width: 75em) {@content;}  //1200px
     }
     

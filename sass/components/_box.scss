@@ -5,6 +5,12 @@
         display: inline-block;
         margin: 1.5rem auto;
     
+    @include responsive(tab-scape){  
+        height: 2rem;
+        width: 2rem;
+        margin: 2rem auto; 
+    }
+    
     @include responsive(phone){
         width: 2.5rem;
         height: 2.5rem;
@@ -22,6 +28,12 @@
         display: inline-block;
         margin-bottom: 1rem;
         
+        @include responsive(tab-scape){  
+            height: 2rem;
+            width: 2rem;
+            margin: 1.5rem auto; 
+    }
+        
         @include responsive(phone){
             width: 2.5rem;
             height: 2.5rem;
@@ -34,6 +46,10 @@
         border-radius: 3px;
         display: inline-block;
         
+        @include responsive(tab-scape){  
+            height: .2rem;
+    }
+        
         @include responsive(phone){
            height: .2rem;
         }
@@ -43,6 +59,10 @@
         background-color: $color-dark-green;
         width: 8rem;
         
+        @include responsive(tab-scape){  
+            width: 10rem; 
+    }
+        
         @include responsive(phone){
            width: 10rem;
         }
@@ -51,6 +71,10 @@
     &--3{
         background-color: $color-box--btn;
         width: 6rem;
+        
+        @include responsive(tab-scape){  
+            width: 8rem; 
+    }
         
         @include responsive(phone){
            width: 8rem;

@@ -10,11 +10,19 @@
     text-align: center;
     text-transform: uppercase;
     font-weight: $default-weight;
+    
+    @include responsive(phone){
+        margin-top: 2.5rem;
+    }
 }
 
 .section-form{
     width: 100%;
     margin-top: 2rem;
+    
+    @include responsive(phone){
+       margin-top: 3rem;
+    }
     
     &:valid &--input{
         
@@ -37,6 +45,25 @@
         font-size: 1.5rem;
         font-family: 'lato', sans-serif;
         transition: all .4s;
+        
+        
+        @include responsive(tab-port){ 
+            font-size: 2rem;
+            width: 50rem;
+            height: 6rem;
+    }
+        
+        @include responsive(tab-scape){  
+            font-size: 2.5rem;
+            width: 50rem;
+            height: 6rem;
+    }
+    
+    @include responsive(phone){
+        height: 5rem;
+        width: 45rem;
+        font-size: 2.2rem;
+    }
         
         &:not(:first-child){
             margin-top: 3rem;
@@ -61,6 +88,24 @@
         transition: border .8s;
         transition: all .4s;
         
+        @include responsive(tab-port){ 
+            font-size: 2.5rem;
+            width: 50rem;
+            height: 6rem;
+    }
+        
+        @include responsive(tab-scape){  
+            font-size: 2.5rem;
+            width: 50rem;
+            height: 7rem;
+    }
+    
+    @include responsive(phone){
+        width: 45rem;
+        font-size: 2.2rem;
+        height: 7rem;
+    }
+        
         &:hover{
             transform: translateY(-.5rem);
             box-shadow: 0 1rem 2rem rgba($color-black, .2);
@@ -82,5 +127,18 @@
         font-size: 1.6rem;
         text-decoration: none;
         color: $color-primary-main;
+        
+        @include responsive(tab-port){ 
+            font-size: 2.2rem;
+    }
+        
+        @include responsive(tab-scape){  
+            font-size: 2.5rem;
+    }
+        
+        @include responsive(phone){
+        font-size: 2.2rem;
+    }
+        
     }
 }
