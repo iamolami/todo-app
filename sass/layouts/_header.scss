@@ -3,27 +3,13 @@
     padding-top: 3rem;
     position: relative;
     
-    @include responsive(phone){
-        padding-left: 6rem;
-        padding-top: 5rem;
+    @include responsive(tab-scape){ 
+        padding-left: 8rem;
     }
     
-    &__logo{
-        font-size: 2.5rem;
-        font-weight: 700;
-        position: absolute;
-        top: 10%;
-        left: 12%;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: $color-primary-main;
-        
-        @include responsive(phone){
-            font-size: 6rem;
-            top: 5%;
-            left: 5%;
-        }
-
+    @include responsive(phone){
+        padding-left: 8rem;
+        padding-top: 5rem;
     }
     
     &__left-col{

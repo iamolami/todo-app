@@ -12,6 +12,11 @@
     color: $color-primary-main;
     font-weight: 500;
         
+        @include responsive(tab-scape){  
+            font-size: 2rem;
+            padding: 2rem 3rem;
+        }
+        
         @include responsive(phone){
             padding: 2rem 3rem;
             font-size: 2rem;
@@ -52,6 +57,11 @@
         margin-top: -2rem;
         cursor: pointer;
         transition: visibility .8s;
+        
+        @include responsive(phone){
+            font-size: 1.8rem;
+            margin-top: -2.5rem;
+        }
     }
 }
 
@@ -67,6 +77,12 @@
     cursor: pointer;
     margin-left: -.2rem;
     transition: border .8s;
+    
+    @include responsive(tab-scape){  
+        width: 12rem;
+        height: 6rem;
+        font-size: 2rem;
+    }
     
     @include responsive(phone){
             width: 12rem;

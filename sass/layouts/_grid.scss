@@ -1,6 +1,10 @@
 .row {
     max-width: $grid-width;
     margin: 0 auto;
+    
+    @include responsive(tab-scape){  
+            max-width: 112rem !important;
+        }
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
@@ -28,6 +32,11 @@
 
     .col-1-of-3 {
         width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+        
+        @include responsive(tab-scape){  
+           margin-left: 2rem;
+            width: 100% !important;
+        }
     }
 
     .col-2-of-3 {
@@ -41,6 +50,10 @@
     
     .col-1-of-5 {
         width: calc((100% - 4 * #{$gutter-horizon}) / 5);
+        
+        @include responsive(tab-scape){  
+            width: 100% !important;
+        }
     }
 
     .col-2-of-4 {
