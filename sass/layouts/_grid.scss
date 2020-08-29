@@ -3,8 +3,9 @@
     margin: 0 auto;
     
     @include responsive(tab-scape){  
-            max-width: 112rem !important;
-        }
+        max-width: 100rem !important;
+         text-align: center !important;
+    }
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
@@ -20,22 +21,31 @@
             margin-right: $gutter-horizontal;
         }
         
+        @include responsive(tab-scape){
+            width: 90% !important;
+            text-align: center !important;
+        }
+        
         @include responsive(phone){
-            width: 100% !important;
+            width: 85% !important;
+            text-align: center !important;
         }
 
     }
 
     .col-1-of-2 {
         width: calc((100% - #{$gutter-horizontal}) / 2);
+        
+        @include responsive (tab-scape){
+            margin-bottom: 5rem;
+        }
     }
 
     .col-1-of-3 {
         width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
         
         @include responsive(tab-scape){  
-           margin-left: 2rem;
-            width: 100% !important;
+           margin-bottom: 2rem;
         }
     }
 
@@ -52,8 +62,14 @@
         width: calc((100% - 4 * #{$gutter-horizon}) / 5);
         
         @include responsive(tab-scape){  
-            width: 100% !important;
+           margin-bottom: 2rem;
         }
+        
+        @include responsive(phone){  
+           margin-bottom: 2rem;
+        }
+        
+        
     }
 
     .col-2-of-4 {

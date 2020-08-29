@@ -46,13 +46,6 @@
         font-family: 'lato', sans-serif;
         transition: all .4s;
         
-        
-        @include responsive(tab-port){ 
-            font-size: 2rem;
-            width: 50rem;
-            height: 6rem;
-    }
-        
         @include responsive(tab-scape){  
             font-size: 2.5rem;
             width: 50rem;
@@ -88,12 +81,6 @@
         transition: border .8s;
         transition: all .4s;
         
-        @include responsive(tab-port){ 
-            font-size: 2.5rem;
-            width: 50rem;
-            height: 6rem;
-    }
-        
         @include responsive(tab-scape){  
             font-size: 2.5rem;
             width: 50rem;
@@ -127,10 +114,6 @@
         font-size: 1.6rem;
         text-decoration: none;
         color: $color-primary-main;
-        
-        @include responsive(tab-port){ 
-            font-size: 2.2rem;
-    }
         
         @include responsive(tab-scape){  
             font-size: 2.5rem;
