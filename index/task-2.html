@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>todo-list &#45; manage your day to day activities</title>
+  <!-- CSS Custom link
+  ================================= -->
+ <link rel="stylesheet" href="../css/main.css">
+ <link rel="stylesheet" href="../css/icon.css">
+
+ <!-- External style link
+ ==================== -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+ </head>
+<body>
+    <div class="navigation">
+            <input type="checkbox" name="" id="button" class="checkbox">
+            <label for="button" class="navigation__input">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation--background">&nbsp;</div>
+            <nav class="navigation--nav">
+                <ul class="navigation--ul">
+                    <li class="navigation--li"><a href="../index/todo.html" class="navigation--link">home</a></li>
+                    <li class="navigation--li"><a href="../index/todo.html" class="navigation--link">about us</a></li>
+                    <li class="navigation--li"><a href="../index/todo.html" class="navigation--link">go pro</a></li>
+                    <li class="navigation--li"><a href="../index/todo.html" class="navigation--link">stories</a></li>
+                    <li class="navigation--li"><a href="../index/login.html" class="navigation--link">log in</a></li>
+                    <li class="navigation--li"><a href="../index/register.html" class="navigation--link">sign up</a></li>
+                </ul>
+            </nav>
+    </div>
+    <header class="sideBar">
+        <div class="sideBar--img">
+            <img src="../img/nat-8.jpeg" class="sideBar--user">
+            <figcaption class="sideBar--main">mark jones</figcaption>
+        </div>
+        <div class="sideBar--nav">
+            <span class="sideBar--1">Message</span>
+            <i class="fa fa-plus"></i>
+            <i class="fa fa-ellipsis-v"></i>
+        </div>
+        <nav class="sideBar--navigation">
+            <ul class="sideBar--menu">
+                <li class="sideBar--menu-items">
+                    <i class="fa fa-home"></i>
+                    <a href="../index/todo.html" class="sideBar--link">Home</a>
+                </li>
+                <li class="sideBar--menu-items">
+                    <i class="fa fa-check"></i>
+                    <a href="../index/task-1.html" class="sideBar--link">Completed tasks</a>
+                </li>
+                <li class="sideBar--menu-items">
+                    <i class="fa fa-close"></i>
+                    <a href="#" class="sideBar--link">Uncompleted tasks</a>
+                </li>
+                <li class="sideBar--menu-items">
+                    <i class="fa fa-send"></i>
+                    <a href="#" class="sideBar--link">Share tasks with friends</a>
+                </li>
+                <li class="sideBar--menu-items">
+                    <i class="fa fa-user"></i>
+                    <a href="#" class="sideBar--link">Change profile picture</a>
+                </li>
+                <li class="sideBar--menu-items">
+                    <i class="fa fa-plus"></i>
+                    <a href="../index/user.html" class="sideBar--link">Add Task</a>
+                </li>
+            </ul>
+            <div class="sideBar--btn"><a href="#popup" class="sideBar--li">log out</a></div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="section-user">
+           <div class="section-user--task-c">
+              <h3 class="section-user--heading">uncompleted tasks</h3>
+               <div class="row-1">
+                   <div class="section-user--left-col">
+                       <div class="section-user--table-left">
+                           <h3 class="section-user--header">date</h3>
+                           <div class="section-user--task-s">
+                               <p class="section-user--figure">01.</p>
+                               <p class="section-user--figure">02.</p>
+                               <p class="section-user--figure">03.</p>
+                               <p class="section-user--figure">04.</p>
+                               <p class="section-user--figure">05.</p>
+                               <p class="section-user--figure">06.</p>
+                           </div>
+                       </div>
+                       <div class="section-user--table-left">
+                           <h3 class="section-user--header">name of task</h3>
+                           <div class="section-user--task-h">
+                               <p class="section-user--name">Meeting</p>
+                               <p class="section-user--name">Gathering</p>
+                               <p class="section-user--name">Vacation</p>
+                               <p class="section-user--name">Meeting</p>
+                               <p class="section-user--name">Interview</p>
+                               <p class="section-user--name">Lunch</p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="section-user--right-col">
+                       <div class="section-user--table-right">
+                           <h3 class="section-user--header">description</h3>
+                           <div class="section-user--task-s">
+                               <p class="section-user--name">Business</p>
+                               <p class="section-user--name">Family</p>
+                               <p class="section-user--name">Mrs Coker</p>
+                               <p class="section-user--name">Alumi</p>
+                               <p class="section-user--name">Job</p>
+                               <p class="section-user--name">my Dog</p>
+                           </div>
+                       </div>
+                       <div class="section-user--table-right">
+                           <h3 class="section-user--header">location</h3>
+                           <div class="section-user--task-s">
+                               <p class="section-user--name">New Jersey</p>
+                               <p class="section-user--name">Carlifonia</p>
+                               <p class="section-user--name">Chandler</p>
+                               <p class="section-user--name">Costa Rica</p>
+                               <p class="section-user--name">TCODE invs.</p>
+                               <p class="section-user--name">Quick Eatery</p>
+                           </div>
+                       </div>
+                       <div class="section-user--table-right">
+                           <h3 class="section-user--header">start</h3>
+                           <div class="section-user--task-s">
+                               <p class="section-user--name">23-02-2020</p>
+                               <p class="section-user--name">30-06-2020</p>
+                               <p class="section-user--name">11-08-2020</p>
+                               <p class="section-user--name">17-03-2020</p>
+                               <p class="section-user--name">22-02-2020</p>
+                               <p class="section-user--name">04-07-2020</p>
+                           </div>
+                       </div>
+                       <div class="section-user--table-right">
+                           <h3 class="section-user--header">ends</h3>
+                           <div class="section-user--task-s">
+                               <p class="section-user--name">23-02-2020</p>
+                               <p class="section-user--name">23-06-2020</p>
+                               <p class="section-user--name">23-08-2020</p>
+                               <p class="section-user--name">23-03-2020</p>
+                               <p class="section-user--name">23-02-2020</p>
+                               <p class="section-user--name">23-07-2020</p>
+                           </div>
+                       </div>
+                       <div class="section-user--table-right">
+                           <h3 class="section-user--header">time</h3>
+                           <div class="section-user--task-s">
+                               <p class="section-user--name">4:45pm</p>
+                               <p class="section-user--name">10:34am</p>
+                               <p class="section-user--name">07:45pm</p>
+                               <p class="section-user--name">2:25pm</p>
+                               <p class="section-user--name">12:56am</p>
+                               <p class="section-user--name">02:45pm</p>
+                           </div>
+                       </div>
+                       <div class="section-user--table-right">
+                           <h3 class="section-user--header">expired</h3>
+                           <div class="section-user--task-s">
+                               <i class="fa fa-close basic"></i>
+                               <i class="fa fa-close basic"></i>
+                               <i class="fa fa-close basic"></i>
+                               <i class="fa fa-close basic"></i>
+                               <i class="fa fa-close basic"></i>
+                               <i class="fa fa-close basic"></i>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+        </section>
+    </main>
+    
+<!--FOOTER SECTION-->
+    <footer class="footer">
+        <div class="footer-hero sh-demo">
+            <div class="footer__text">
+                <p class="footer__text--sub">
+                    Lorem ipsum dolor sit amet.
+                </p>
+                <p class="footer__text--sm">
+                    consectetur adipisicing elit. Modi, repellendus.
+                </p>
+            </div>
+            <div class="footer-hero--tn">
+                <a href="#" class="commonBtn">add tasks</a>
+            </div>
+        </div>
+        
+        <div class="footer-box float-left">
+            <div class="row">
+            <div class="col-1-of-5">
+                <div class="footer-box--text">
+                    <h3 class="footer-box--main">to-do</h3>
+                    <p class="footer-box--sub">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolorem earum magni amet eum? Ullam.
+                    </p> 
+                </div>
+            </div>
+            <div class="col-1-of-5 U-margin-left">
+                <div class="footer-box--text">
+                    <h3 class="footer-box--main">support</h3>
+                    <ul class="footer-box--menu">
+                        <li class="footer-box--menu-items">
+                            <a href="#" class="footer-box--link">Support Videos</a>
+                        </li>
+                        <li class="footer-box--menu-items">
+                            <a href="#" class="footer-box--link">FAQ's</a>
+                        </li>
+                        <li class="footer-box--menu-items">
+                            <a href="#" class="footer-box--link">Review</a>
+                        </li>
+                        <li class="footer-box--menu-items">
+                            <a href="#" class="footer-box--link">Warranty & Return</a>
+                        </li>
+                        <li class="footer-box--menu-items">
+                            <a href="#" class="footer-box--link">Terms & Policies</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-5 U-margin-left">
+                <img src="../img/brand.jpg" alt="" class="footer-box--logo">
+            </div>
+            <div class="col-1-of-5 U-margin-left">
+                <div class="footer-box--text">
+                    <h3 class="footer-box--main">support</h3>
+                    <ul class="footer-box--menu">
+                        <li class="footer-box--menu-items">
+                            <a href="#" class="footer-box--link">Support Videos</a>
+                        </li>
+                        <li class="footer-box--menu-items">
+                            <a href="#" class="footer-box--link">FAQ's</a>
+                        </li>
+                        <li class="footer-box--menu-items">
+                            <a href="#" class="footer-box--link">Review</a>
+                        </li>
+                        <li class="footer-box--menu-items">
+                            <a href="#" class="footer-box--link">Warranty & Return</a>
+                        </li>
+                        <li class="footer-box--menu-items">
+                            <a href="#" class="footer-box--link">Terms & Policies</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-5 U-margin-left U-top">
+                <div class="footer-box--text">
+                    <h3 class="footer-box--main">sign up and save</h3>
+                    <p class="footer-box--sub">
+                        Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
+                    </p>
+                    <form action="#" class="footer-box--form">
+                        <input type="email" name="email" id="email" placeholder="Enter your email" class="footer-box--input" required>
+                        <button class="footer-box--btn">
+                           <i class="fa fa-send"></i><span class="footer-box--btn--btn">subscribe</span></button>
+                    </form>
+                    <div class="footer-box--icon">
+                        <a href="#" class="footer-box--li"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="footer-box--li"><i class="fa fa-pinterest"></i></a>
+                        <a href="#" class="footer-box--li"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="footer-box--li"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row-1 center">
+                <p class="footer-copyright">TO-DO © 2020 
+                    <a href="#" class="footer-copyright--link">Evovle Dev.</a> | MANAGE YOUR DAILY TASK
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <section class="section-pop" id="popup">
+        <div class="section-pop--content">
+            <a href="../index/todo.html" class="section-pop--icon">&times;</a>
+            <div class="section-pop--text">
+                <i class="fa fa-handshake-o"></i>
+                <h1 class="section-pop--main">you've successfully log out</h1>
+                <p class="section-pop--sub">we will be expecting you back here</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section-pop" id="pop">
+        <div class="section-pop--content">
+            <a href="../index/user.html" class="section-pop--icon">&times;</a>
+            <div class="section-pop--text">
+                <i class="fa fa-check"></i>
+                <h1 class="section-pop--main">you've successfully add a task</h1>
+                <p class="section-pop--sub">Managing your task is very important</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

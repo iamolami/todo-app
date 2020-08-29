@@ -51,7 +51,7 @@
     &--ul{
         list-style: none;
         float: right;
-        margin-right: 10rem;
+        margin-right: 7rem;
         
         @include responsive(phone){
                 margin-right: 12rem;
@@ -197,7 +197,7 @@
     }
     
     .checkbox:checked ~ &--background{
-        transform: scale(11);
+        transform: scale(9.5);
         
         @include responsive(tab-scape){  
                 transform: scale(8);
