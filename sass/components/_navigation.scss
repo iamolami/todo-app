@@ -9,8 +9,8 @@
     backface-visibility: hidden;
     
      @include responsive(phone){
-        top: 4rem;
-        right: 4rem;
+        top: 1rem;
+        right: 2rem;
     }
     
     &--background{
@@ -34,8 +34,8 @@
          @include responsive(phone){
             height: 8rem;
             width: 8rem;
-            top: 4rem;
-            right: 4rem;
+            top: 1rem;
+            right: 2rem;
         }
     }
     

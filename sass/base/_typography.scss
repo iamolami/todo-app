@@ -224,12 +224,12 @@ body{
     
     @include responsive(tab-scape){  
         width: 45rem;
-        height: 150vh;
+        height: 190vh;
     }
     
     @include responsive(phone){
         width: 50rem;
-        height: 150vh;
+        height: 185vh;
         animation: none;
     }
     
@@ -379,13 +379,13 @@ body{
     backface-visibility: hidden;
     
     @include responsive(tab-scape){  
-        height: 85vh;
+        height: 112vh;
         width: 100%;
         margin-left: 5rem;
     }
     
     @include responsive(phone){
-        height: 85vh;
+        height: 112vh;
         animation: none;
         }
 }
