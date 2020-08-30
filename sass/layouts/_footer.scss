@@ -67,12 +67,26 @@
     background-color: $color-primary-main;
     padding:0 5rem;
     
+    @include responsive(tab-scape){
+        text-align: center;
+        padding:0;
+    }
+    
     @include responsive(phone){
-           padding: 0 3rem;
-        }
+        text-align: center;
+        padding:0;
+    }
     
     &--icon{
         margin-top: 2rem;
+        
+        @include responsive(tab-scape){
+            margin-top: 4rem;
+        }
+        
+        @include responsive(phone){
+            margin-top: 4rem;
+        }
     }
     
     &--li{
@@ -90,7 +104,7 @@
             @include responsive(phone){
               margin-left: 3rem;
         }
-        }
+    }
         
         &:hover{
             color: $color-white;
@@ -227,10 +241,7 @@
     font-size: 1.4rem;
     color: $color-primary-sub;
     word-spacing: .5rem;
-    
-    @include responsive(tab-port){
-       margin-bottom: 2rem;
-    }
+    margin-bottom: 2rem;
     
     @include responsive(tab-scape){  
             font-size: 2.2rem;

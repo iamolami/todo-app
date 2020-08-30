@@ -41,5 +41,9 @@
 }
 
 .sh-demo{
-    margin-top: -12rem;
+    margin-top: -11rem;
+    
+    @include responsive (tab-scape){
+        margin-top: -8rem;
+    }
 }

@@ -32,6 +32,16 @@
         opacity: 0;
         box-shadow: 1rem 1rem 1rem rgba($color-black, .9);
         border-radius: 3px;
+        
+        @include responsive(tab-scape){
+            width: 50%;
+            height: 80vh;
+        }
+        
+        @include responsive(phone){
+            width: 70%;
+            height: 80vh;
+        }
     }
     
     &--icon{

@@ -5,10 +5,12 @@
     top: 2rem;
     right: 3rem;
     z-index: 2000;
+    overflow: hidden;
+    backface-visibility: hidden;
     
      @include responsive(phone){
-        top: 4rem;
-        right: 4rem;
+        top: 1rem;
+        right: 2rem;
     }
     
     &--background{
@@ -21,11 +23,8 @@
         background-color: paleturquoise;
         z-index: -800;
         transition: all .5s;
-        
-        @include responsive(tab-port){ 
-            height: 7rem;
-            width: 7rem;
-    }
+        overflow: hidden;
+        backface-visibility: hidden;
         
         @include responsive(tab-scape){  
             height: 8rem;
@@ -35,8 +34,8 @@
          @include responsive(phone){
             height: 8rem;
             width: 8rem;
-            top: 4rem;
-            right: 4rem;
+            top: 1rem;
+            right: 2rem;
         }
     }
     
@@ -52,7 +51,7 @@
     &--ul{
         list-style: none;
         float: right;
-        margin-right: 10rem;
+        margin-right: 7rem;
         
         @include responsive(phone){
                 margin-right: 12rem;
@@ -96,30 +95,23 @@
     box-shadow: 0 1rem 1rem rgba($color-black, .2);
     z-index: 3000;
     cursor: pointer;
+    overflow: hidden;
+    backface-visibility: hidden;
         
-        @include responsive(tab-port){ 
-            height: 7rem;
-            width: 7rem;
+    @include responsive(tab-scape){  
+        height: 8rem;
+        width: 8rem;
     }
         
-        @include responsive(tab-scape){  
-            height: 8rem;
-            width: 8rem;
-        }
-        
-        @include responsive(phone){
-            width: 8rem;
-            height: 8rem;
-        }
+    @include responsive(phone){
+        width: 8rem;
+        height: 8rem;
     }
+}
     
     &__icon{
     margin-top: 1.9rem;
     position: relative;
-        
-        @include responsive(tab-port){ 
-           margin-top: 2.5rem;
-    }
         
         @include responsive(tab-scape){  
                 margin-top: 2.5rem;
@@ -136,12 +128,7 @@
         background-color: #fff;
         display: inline-block;
         transition: transform .2s;
-            
-            @include responsive(tab-port){ 
-                height: .2rem;
-                width: 3.5rem;
-    }
-            
+                 
             @include responsive(tab-scape){  
                 height: .3rem;
                 width: 5rem;
@@ -186,11 +173,7 @@
     
     .checkbox:checked + &__input &__icon{
         background-color: transparent;
-        margin-top: 2rem;
-        
-        @include responsive(tab-port){ 
-            margin-top: 3.5rem;
-    }
+        margin-top: 3rem;
         
         @include responsive(tab-scape){  
             margin-top: 4rem;
@@ -214,10 +197,10 @@
     }
     
     .checkbox:checked ~ &--background{
-        transform: scale(10);
+        transform: scale(9.5);
         
         @include responsive(tab-scape){  
-                transform: scale(7);
+                transform: scale(8);
         }
         
         @include responsive(phone){

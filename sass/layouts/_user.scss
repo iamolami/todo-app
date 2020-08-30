@@ -1,17 +1,90 @@
 .sideBar{
+    position: relative;
     width: 20%;
-    height: 130vh;
-    background-color: $color-black;
-    margin-top: -3rem;
-    box-shadow: 0 1rem 1rem rgba($color-black, .2);
+    height: 115vh;
+    z-index: 9999;
     
-    @include responsive(tab-scape){
-            width: 25%;
+    &--button{
+        position: absolute;
+        top: 0;
+        left: 2%;
+        z-index: 88888;
+        transition: transform .5s;
+        cursor: pointer;
+    }
+    
+    &__icon{
+        
+        &,
+        &::after,
+        &::before{
+            background-color: $color-primary-main;
         }
+    }
     
-    @include responsive(phone){
-        width: 35%;
-        height: 140vh;
+    .checkbox:checked + &--button{
+        left: 16%;
+        transform: translateX(-2rem);
+        
+        
+         @include responsive(tab-scape){
+            left: 25%;
+        }
+        
+         @include responsive (phone){
+            left: 33%;
+        }
+    }
+    
+    .checkbox:checked + &--button + &--container{
+        width: 20%;
+        opacity: 1;
+        transform: translateX(-2rem);
+        
+        
+         @include responsive(tab-scape){
+            width: 32%;
+            opacity: 1
+        }
+        
+        @include responsive (phone){
+            width: 40%;
+            opacity: 1;
+        }
+    }
+    
+    .checkbox:checked + &--button &__icon{
+        background-color: $color-white;
+    }
+    
+    .checkbox:checked + &--button &__icon::after{
+        background-color: $color-white;
+    }
+    
+    .checkbox:checked + &--button &__icon::before{
+        background-color: $color-white;
+    }
+    
+    &--container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 115vh;
+        background-color: $color-black;
+        box-shadow: 0 1rem 1rem rgba($color-black, .2);
+        z-index: 3333;
+        width: 0;
+        opacity: 0;
+        transition: transform .5s;
+        
+        
+         @include responsive(tab-scape){
+            height: 205vh;
+        }
+        
+        @include responsive (phone){
+             height: 205vh;
+        }
     }
     
     &--img{
@@ -61,8 +134,8 @@
         }
         
         @include responsive(phone){
-            font-size: 1.8rem;
-            margin-top: 2rem;
+            font-size: 1.9rem;
+            margin-top: 2.5rem;
         }
     }
     
@@ -87,7 +160,7 @@
             cursor: pointer;
             
             @include responsive(tab-scape){
-                font-size: 2rem;
+                font-size: 3rem;
         }
         
             
@@ -112,7 +185,7 @@
             background-color: rgba(#ff69b4, .5);
             padding: .5rem 1rem;
             border: 1px solid #ff1493;
-        }
+        }        
     }
     
     &--1{
@@ -128,6 +201,7 @@
     
     &--navigation{
         margin-top: 2rem;
+        margin-left: 1rem;
         
         @include responsive(tab-scape){
             margin-top: 5rem;
@@ -135,7 +209,8 @@
         
         
         @include responsive(phone){
-           margin-top: 4rem;
+            margin-top: 4rem;
+            margin-left: 2rem;
         }
     }
     
@@ -148,38 +223,16 @@
         
         &:not(first-child){
             margin-top: 3rem;
+                @include responsive(tab-scape){
+                    margin-top: 4rem;
+            }
             
-            @include responsive(tab-scape){
-                margin-top: 4rem;
-        }
             @include responsive(phone){
                 margin-top: 3.5rem;
-        }
-        }
-        
-        .fa{
-            font-size: 1.6rem;
-            @include responsive(phone){
-                font-size: 2.2rem;
-        }
-        }
-        
-        .fa-home{
-            color: darkorange;
-        }
-        
-        .fa-check{
-            color: lime;
-        }
-        
-        .fa-close{
-            color: red;
-        }
-        
-        .fa-send{
-            color: $color-box-bg;
+            }
         }
     }
+        
     
     &--link{
         text-decoration: none;
@@ -207,7 +260,7 @@
         height: 3.7rem;
         text-align: center;
         margin-top: 2.5rem;
-        margin-left: 1rem;
+        margin-left: 1.2rem;
         
         @include responsive(tab-scape){
             height: 5rem;
@@ -242,23 +295,16 @@
 }
 
 .section-user{
-    position: absolute;
-    top: 0;
-    left: 20%;
-    width: 80%;
-    height: 100vh;
-    
-    @include responsive(tab-port){
-        height: 140vh;
-    }
+    position: relative;
+    width: 100%;
+    height: 110vh;
     
     @include responsive(tab-scape){
-        height: 140vh;
+        height: 190vh;
     }
     
     @include responsive(phone){
-        left: 15%;
-        height: 140vh;
+        height: 200vh;
      }
     
     &--box{
@@ -279,20 +325,28 @@
         
         @include responsive(tab-scape){
             font-size: 3rem;
+            padding-top: 3rem;
         }
         
         @include responsive(phone){
            font-size: 2.5rem;
+            padding-top: 3rem;
         }
     }
     
     &--content-1{
-        width: 50%;
+        width: 100%;
         height: 130vh;
+    
     }
     
     &--details{
-        padding: 2rem;
+        margin: 2rem 30%;
+        
+        @include responsive (phone){
+            margin: 3rem 12.2%;
+        }
+        
     }
     
     &--main{
@@ -300,26 +354,17 @@
         font-size: 1.6rem;
         color: $color-primary-main;
         font-weight: 500;
-        margin-left: -.5rem;
         
-        @include responsive(tab-scape){
+         @include responsive (tab-scape){
             font-size: 2rem;
         }
         
-        @include responsive(phone){
+        @include responsive (phone){
             font-size: 2rem;
         }
         
         &:not(first-child){
-            margin-top: 2.5rem;
-            
-            @include responsive(tab-scape){
-                margin-top: 2rem;
-            }
-            
-            @include responsive(phone){
-                margin-top: 2rem;
-            }
+            margin-top: 2rem;
         }
     }
     
@@ -337,6 +382,7 @@
         height: 3rem;
         padding: 2rem;
         margin-top: 1rem;
+        margin-left: 1rem;
         background-color: transparent;
         border: 1px solid $color-box--btn;
         outline: none;
@@ -352,32 +398,25 @@
         @include responsive(phone){
             width: 50rem;
             height: 5rem;
-            font-size: 1.8rem;
+            font-size: 2rem;
         }
         
-        &:valid + .fa-check{
+        &:focus + .fa-check{
             visibility: visible;
             color: $color-dark-green;
         }
-    }
-    
-    &--date{
-        margin-top: 1.2rem;
-        position: relative;
-        font-family: 'lato', sans-serif;
     }
     
     &--select{
         font-family: inherit;
         font-weight: 500;
         font-size: 1.5rem;
+        margin-top: 1rem;
         outline: none;
         border: 1px solid $color-box--btn;
-        display: inline-block;
         max-width:20%;
         height: 70%;
         padding: .5rem;
-        margin-top: .8rem;
         background-color: transparent;
         box-sizing: inherit;
         color: $color-primary-main;
@@ -391,6 +430,11 @@
         &:not(:first-child){
             margin-left: 1.8rem;
         }
+        
+        &:valid + .fa-check{
+            visibility: visible;
+            color: $color-dark-green;
+        }
     }
     
     &--group{
@@ -402,6 +446,8 @@
         background-color: $color-dark-green;
         border: none;
         padding: 1rem 2rem;
+        margin-right: 5rem;
+        margin-top: -2rem;
         text-transform: uppercase;
         font-size: $default-size;
         cursor: pointer;
@@ -438,6 +484,193 @@
     .fa-check{
         margin-left: 1rem;
         visibility: hidden;
-        transition: visible .4s;
+        transition: visibility .4s;
     }
+    
+//COMPLETED TASKED SECTION
+    &--task-c{
+        height: 110vh;
+        padding: 2rem;
+        
+        @include responsive(tab-scape){
+            margin-left: .5rem;
+            height: 200vh;
+            padding: 0;
+        }
+        
+         @include responsive(phone){
+            height: 200vh;
+            margin-left: .5rem;
+            padding: 0;
+        }
+    }
+    
+    &--left-col{
+        flex-basis: 21%;
+        height: 100vh;
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        @include responsive(tab-scape){
+            height: 200vh;
+        }
+        
+        @include responsive(phone){
+            height: 200vh;
+        }
+    }
+    
+    &--right-col{
+        flex-basis: 75%;
+        height: 100vh;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+         @include responsive(tab-scape){
+            height: 200vh;
+        }
+        
+        @include responsive(phone){
+            height: 200vh;
+        }
+    }
+    
+    &--table-left{
+        flex-basis: 30%;
+        height: 100vh;
+        
+         @include responsive(tab-scape){
+            height: 150vh;
+            padding-top: 5rem;
+        }
+        
+        @include responsive(phone){
+            height: 180vh;
+            padding-top: 3rem;
+        }
+        
+        &:not(:first-child){
+            flex-basis: 60%;
+            border-left: 1px solid rgba($color-primary-main, .2);
+            padding-left: 1rem;
+        }
+        
+        &:last-child{
+            border-right: 1px solid rgba($color-primary-main, .2);
+            padding-right: 1rem;
+        }
+    }
+    
+    &--table-right{
+        flex-basis: 16%;
+        height: 100vh;
+        
+        @include responsive(tab-scape){
+            height: 150vh;
+            padding-top: 5rem;
+        }
+        
+        @include responsive(phone){
+            height: 180vh;
+            padding-top: 3rem;
+        }
+        
+        &:not(:first-child){
+            border-left: 1px solid rgba($color-primary-main, .2);
+            padding-left: 1rem;
+        }
+        
+        &:last-child{
+            flex-basis: 10%;
+        }
+        
+    }
+    
+    &--task-s{
+        margin-top: 3rem;
+    }
+    
+    &--header{
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
+        
+         @include responsive(tab-scape){
+            font-size: 2rem;
+        }
+    }
+    
+    &--figure{
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-align: center;
+        
+        &:not(:first-child){
+            margin-top: 3rem;
+            
+            @include responsive (phone){
+                margin-top: 3rem;
+            }
+        }
+        
+        @include responsive(tab-scape){
+            font-size: 1.8rem;
+        }
+    }
+    
+    &--name{
+        font-size: 1.6rem;
+       text-align: center;
+        
+         &:not(:first-child){
+            margin-top: 3rem;
+             
+             
+         @include responsive(tab-scape){
+           margin-top: 3.5rem;
+        }
+             
+            @include responsive (phone){
+                margin-top: 3.5rem;
+            }
+        }
+    }
+    
+    .icon{
+        display: block;
+        font-size: 2rem;
+        color: $color-dark-green;
+        text-align: center;
+        cursor: pointer;
+        
+        &:not(:first-child){
+            margin-top: 2.5rem;
+            
+            @include responsive(tab-scape){
+                margin-top: 3.2rem;
+            }
+        }
+    }
+    
+    .basic{
+        display: block;
+        font-size: 2rem;
+        color: red;
+        text-align: center;
+        cursor: pointer;
+        
+            &:not(:first-child){
+                margin-top: 2.5rem;
+            
+                @include responsive(tab-scape){
+                    margin-top: 3.2rem;
+                }
+            }
+        }
 }

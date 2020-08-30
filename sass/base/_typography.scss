@@ -33,11 +33,6 @@ body{
         color: $color-primary-sub;
         line-height: 2.5rem;
         
-            @include responsive(tab-port){ 
-                font-size: 1.8rem;
-                line-height: 3rem;
-        }
-        
             @include responsive(tab-scape){  
                 font-size: 2rem;
                 line-height: 3rem;
@@ -80,19 +75,19 @@ body{
     margin-top: 1rem;
     padding-right: 5rem;
     
+    @include responsive(tab-scape){
+        padding-right: 0;
+    }
+    
     @include responsive(phone){
-            margin-top: 1.2rem;
-        }
+        margin-top: 1.2rem;
+    }
     
     &--main{
         font-size: 1.8rem;
         font-weight: 600;
         color: $color-primary-main;
         margin-bottom: 1.5rem;
-        
-        @include responsive(tab-port){ 
-            font-size: 2rem;
-        }
         
         @include responsive(tab-scape){  
                 font-size: 2.3rem;
@@ -108,12 +103,6 @@ body{
         font-size: $default-size;
         color: $color-primary-sub;
         line-height: 2rem;
-        
-        @include responsive(tab-port){ 
-            font-size: 1.8rem;
-            line-height: 2.7rem;
-        }
-        
         
         @include responsive(tab-scape){  
                 font-size: 2rem;
@@ -143,13 +132,13 @@ body{
         transition: border .8s;
         
         @include responsive(tab-scape){  
-            width: 31rem;
-            height: 6rem;
+            width: 80%;
+            height: 7rem;
             font-size: 2.5rem;
         }
         
         @include responsive(phone){
-            width: 50rem;
+            width: 43rem;
             height: 7rem;
             font-size: 2.5rem;
         }
@@ -172,7 +161,7 @@ body{
     margin-bottom: 5rem;
     
     @include responsive(tab-scape){  
-            margin: 0 .8rem;
+            margin: 0 5rem;
             margin-bottom: 5rem;
         }
     
@@ -204,6 +193,11 @@ body{
 
 .features-text--btn{
     text-align: center;
+    display: inline-block;
+    
+    @include responsive(tab-scape){
+        margin-top: 3rem;
+    }
 }
 
 //PREMIUM
@@ -228,29 +222,19 @@ body{
     box-shadow: 1rem 1rem 1rem rgba($color-black, .2);
     animation: moveInleft .8s ease-out;
     
-    @include responsive(tab-port){ 
-        height: 135vh;
-    }
-        
-    
     @include responsive(tab-scape){  
         width: 45rem;
-        height: 175vh;
+        height: 190vh;
     }
     
     @include responsive(phone){
         width: 50rem;
-        height: 175vh;
+        height: 185vh;
         animation: none;
     }
     
     &--text{
         padding: 2rem;
-        
-        @include responsive(tab-port){ 
-            padding: 2.7rem;
-        }
-        
         
         @include responsive(tab-scape){  
             padding: 2.5rem;
@@ -298,11 +282,6 @@ body{
         padding-bottom: 1.5rem;
         border-bottom: 1px solid $color-primary-sub;
         
-        @include responsive(tab-port){ 
-            font-size: 1.6rem;
-            line-height: 2.7rem;
-        }
-        
         
         @include responsive(tab-scape){  
             font-size: 2.3rem;
@@ -334,9 +313,6 @@ body{
         font-size: 1.6rem;
         color: $color-primary-main;
         
-        @include responsive(tab-port){ 
-            font-size: 1.7rem;
-        }
         
         
         @include responsive(tab-scape){  
@@ -390,7 +366,9 @@ body{
 .testimony-background{
     width: 100%;
     height: 62vh;
+    position: relative;
     text-align: center;
+    display: inline-block;
     background-image: url(../img/bg-5.jpg);
     background-position: center;
     background-size: cover;
@@ -400,18 +378,14 @@ body{
     animation-fill-mode: backwards;
     backface-visibility: hidden;
     
-    @include responsive(tab-port){ 
-        height: 85vh;
-    }
-        
-    
     @include responsive(tab-scape){  
-        height: 100vh;
+        height: 112vh;
         width: 100%;
+        margin-left: 5rem;
     }
     
     @include responsive(phone){
-        height: 110vh;
+        height: 112vh;
         animation: none;
         }
 }
@@ -450,11 +424,6 @@ body{
         font-size: 1.6rem;
         line-height: 2.5rem;
         color: $color-primary-sub;
-        
-        @include responsive(tab-port){ 
-            font-size: 1.6rem;
-        }
-        
         
         @include responsive(tab-scape){  
             font-size: 2.3rem;
@@ -547,5 +516,28 @@ body{
         &:hover{
             color: $color-box--btn;
         }
+    }
+}
+
+.section-chat{
+    position: fixed;
+    bottom: 10%;
+    right: 1%;
+    text-align: center;
+    z-index: 3333333333;
+    background-color: blue;
+    display: inline-block;
+    width: 8rem;
+    height: 5rem;
+    border-radius: 10%;
+    
+    &--text{
+        display: inline-block;
+        font-size: 1.8rem;
+        color: $color-white;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 1.5rem;
+        text-decoration: none;
     }
 }

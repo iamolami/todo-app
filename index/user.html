@@ -33,7 +33,12 @@
                 </ul>
             </nav>
     </div>
-    <header class="sideBar">
+    <header class="sideBar--hero">
+        <input type="checkbox" name="" id="btn" class="checkbox">
+            <label for="btn" class="sideBar--button">
+                <span class="navigation__icon sideBar__icon">&nbsp;</span>
+            </label>
+    <div class="sideBar--container">
         <div class="sideBar--img">
             <img src="../img/nat-8.jpeg" class="sideBar--user">
             <figcaption class="sideBar--main">mark jones</figcaption>
@@ -46,24 +51,27 @@
         <nav class="sideBar--navigation">
             <ul class="sideBar--menu">
                 <li class="sideBar--menu-items">
-                    <i class="fa fa-home"></i>
                     <a href="../index/todo.html" class="sideBar--link">Home</a>
                 </li>
                 <li class="sideBar--menu-items">
-                    <i class="fa fa-check"></i>
-                    <a href="#" class="sideBar--link">Completed tasks</a>
+                    <a href="../index/task-1.html" class="sideBar--link">Completed tasks</a>
                 </li>
                 <li class="sideBar--menu-items">
-                    <i class="fa fa-close"></i>
-                    <a href="#" class="sideBar--link">Uncompleted tasks</a>
+                    <a href="../index/task-2.html" class="sideBar--link">Uncompleted tasks</a>
                 </li>
                 <li class="sideBar--menu-items">
-                    <i class="fa fa-send"></i>
                     <a href="#" class="sideBar--link">Share tasks with friends</a>
+                </li>
+                <li class="sideBar--menu-items">
+                    <a href="#" class="sideBar--link">Change profile picture</a>
+                </li>
+                <li class="sideBar--menu-items">
+                    <a href="#" class="sideBar--link">Add Task</a>
                 </li>
             </ul>
             <div class="sideBar--btn"><a href="#popup" class="sideBar--li">log out</a></div>
         </nav>
+        </div>
     </header>
     <main>
         <section class="section-user">
@@ -73,28 +81,37 @@
                         <div class="section-user--text">
                             <h3 class="section-user--heading">my tasks</h3>
                             <div class="section-user--details">
-                                
                                 <label for="name" class="section-user--main">
                                    <i class="fa fa-user"></i> Name of Task
                                 </label>
                                 <input type="text" id="name" name="size" class="section-user--input" required>
                                 <i class="fa fa-check"></i>
-                                
-                                <label for="textarea" class="section-user--main">
+                            </div>
+                            <div class="section-user--details">
+                                <label for="text" class="section-user--main">
                                     <i class="fa fa-commenting"></i>Description
                                 </label>
-                                <textarea id="textarea" rows="3" cols="10" class="section-user--input" required></textarea>
+                                <input type="text" name="size" id="text" required class="section-user--input">
                                 <i class="fa fa-check"></i>
+                            </div>
+                             <div class="section-user--details">
                                 <label for="location" class="section-user--main">
                                    <i class="fa fa-map-marker"></i> Location
                                 </label>
                                 <input type="text" id="location" name="size" class="section-user--input" required>
                                 <i class="fa fa-check"></i>
-                                
+                            </div>
+                            <div class="section-user--details">
+                                <label class="section-user--main">
+                                    <i class="fa fa-clock-o"></i>Time
+                                </label>
+                                <input type="time" name="time" id="time" class="section-user--input">
+                                <i class="fa fa-check"></i>
+                            </div>
+                                 <div class="section-user--details">
                                  <label for="date" class="section-user--main">
                                      <i class="fa fa-send"></i>Commencement Date
                                 </label>
-                                <div class="section-user--date">
                                     <select class="section-user--select" id="date">
                                         <option class="section-user--group">Day</option>
                                         <option class="section-user--group">01</option>
@@ -160,12 +177,11 @@
                                     <option class="section-user--group">2029</option>
                                     <option class="section-user--group">2030</option>
                                 </select>
-                                </div>
-                                
+                            </div>
+                             <div class="section-user--details">
                                 <label class="section-user--main">
                                     <i class="fa fa-close"></i>Expiring Date
                                 </label>
-                                <div class="section-user--date">
                                     <select class="section-user--select">
                                         <option class="section-user--group">Day</option>
                                         <option class="section-user--group">01</option>
@@ -232,14 +248,13 @@
                                     <option class="section-user--group">2030</option>
                                 </select>
                                 </div>
+                            </div>
                                 <div>
                                 <a href="#pop"><button type="submit" class="section-user--btn">add task</button></a>
                             </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
         </section>
     </main>
     
